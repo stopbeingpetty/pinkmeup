@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Pink Me Up — Beauty Salon · Čavle, Rijeka</title>
+<link rel="icon" type="image/png" href="logo.png" />
 <meta name="description" content="Beauty Salon Pink Me Up u Čavlima, nadomak Rijeke — vrhunski tretmani lica Skeyndor, ruska pedikura, Lycon depilacija, manikura, lash & brow lift i njega tijela. Mjesto gdje ljepota postaje ritual." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -95,7 +96,7 @@ header.nav.scrolled{
 }
 .nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:var(--maxw);margin:0 auto;padding:0 32px}
 .brand{display:flex;align-items:center;gap:13px}
-.brand .mark{width:38px;height:38px;flex:none}
+.brand .mark{width:46px;height:46px;flex:none;object-fit:contain}
 .brand-text{line-height:1}
 .brand-text .b1{font-family:var(--sans);font-weight:500;font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:var(--ink-soft)}
 .brand-text .b2{font-family:var(--serif);font-weight:600;font-size:1.35rem;color:var(--wine);letter-spacing:.01em;margin-top:-2px}
@@ -117,8 +118,11 @@ nav a.link:hover::after{width:100%}
 .btn.light{background:#fff;color:var(--wine);border-color:#fff}
 .btn.light:hover{background:var(--blush);border-color:var(--blush);color:var(--wine)}
 
-.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px}
-.burger span{width:24px;height:2px;background:var(--wine);transition:.3s}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px;position:relative;z-index:1002}
+.burger span{width:24px;height:2px;background:var(--wine);transition:.3s var(--ease);transform-origin:center}
+.burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* ============================================================
    HERO
@@ -348,9 +352,9 @@ footer .fcol p,footer .fcol a{font-size:.95rem;color:#d8b8c4;margin-bottom:10px;
 footer .fcol a:hover{color:var(--gold-soft)}
 footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
 .foot-soc{display:flex;gap:12px}
-.foot-soc a{width:40px;height:40px;border:1px solid rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#e9cdd7;transition:.35s}
+.foot-soc a{width:46px;height:46px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.06);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#e9cdd7;transition:.35s var(--ease)}
 .foot-soc a:hover{background:var(--magenta);border-color:var(--magenta);color:#fff;transform:translateY(-3px)}
-.foot-soc a svg{width:18px;height:18px}
+.foot-soc a svg{width:19px;height:19px;display:block}
 .fcontact-line{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}
 .fcontact-line svg{width:18px;height:18px;color:var(--gold-soft);flex:none;margin-top:3px}
 .foot-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;padding:26px 0;font-size:.8rem;color:#a98494}
@@ -378,14 +382,20 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
   nav ul{display:none}
   .burger{display:flex}
   nav.open ul{
-    display:flex;position:fixed;top:0;right:0;bottom:0;width:78%;max-width:320px;
-    flex-direction:column;gap:0;background:var(--paper);padding:96px 32px;box-shadow:var(--shadow-lg);z-index:1001;
-    align-items:flex-start;
+    display:flex;position:fixed;top:0;right:0;bottom:0;width:80%;max-width:330px;
+    flex-direction:column;gap:0;
+    background:linear-gradient(180deg,#fffaf8,#fbeef1);
+    padding:104px 34px 40px;box-shadow:-20px 0 60px rgba(110,31,67,.22);z-index:1001;
+    align-items:flex-start;border-left:2px solid var(--gold-soft);
+    animation:slideIn .4s var(--ease);
   }
+  @keyframes slideIn{from{transform:translateX(100%)}to{transform:translateX(0)}}
   nav.open ul li{width:100%;border-bottom:1px solid var(--blush-deep)}
-  nav.open ul li a.link{display:block;padding:18px 0;font-size:.9rem}
-  nav.open ul li .btn{margin-top:20px}
-  .navmask{display:none;position:fixed;inset:0;background:rgba(43,23,33,.4);z-index:1000;backdrop-filter:blur(2px)}
+  nav.open ul li a.link{display:block;padding:18px 2px;font-size:.95rem;color:var(--wine);letter-spacing:.12em}
+  nav.open ul li a.link::after{display:none}
+  nav.open ul li .btn{margin-top:24px}
+  body.menu-open .mobile-cta{display:none}
+  .navmask{display:none;position:fixed;inset:0;background:rgba(43,23,33,.5);z-index:999;backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
   .navmask.show{display:block}
   .sec{padding:84px 0}
   .price-list{columns:1}
@@ -428,15 +438,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
 <header class="nav" id="nav">
   <div class="nav-inner">
     <a href="#top" class="brand">
-      <span class="mark" aria-hidden="true">
-        <svg viewBox="0 0 100 100" fill="none">
-          <rect x="20" y="20" width="60" height="60" rx="10" transform="rotate(45 50 50)" fill="#c83e73"/>
-          <rect x="29" y="29" width="42" height="42" rx="7" transform="rotate(45 50 50)" fill="none" stroke="#fbe7ee" stroke-width="2"/>
-          <g fill="#fff">
-            <path d="M50 38c-5-7-12-7-12-1 0 5 7 8 12 12 5-4 12-7 12-12 0-6-7-6-12 1z" opacity=".95"/>
-          </g>
-        </svg>
-      </span>
+      <img class="mark" src="logo.png" alt="Pink Me Up — Beauty Salon" />
       <span class="brand-text">
         <span class="b1">Beauty Salon</span>
         <span class="b2">Pink <em>me up</em></span>
@@ -872,9 +874,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
     <div class="foot-grid">
       <div class="fcol">
         <span class="brand">
-          <span class="mark" aria-hidden="true">
-            <svg viewBox="0 0 100 100" fill="none"><rect x="20" y="20" width="60" height="60" rx="10" transform="rotate(45 50 50)" fill="#c83e73"/><rect x="29" y="29" width="42" height="42" rx="7" transform="rotate(45 50 50)" fill="none" stroke="#fbe7ee" stroke-width="2"/><g fill="#fff"><path d="M50 38c-5-7-12-7-12-1 0 5 7 8 12 12 5-4 12-7 12-12 0-6-7-6-12 1z" opacity=".95"/></g></svg>
-          </span>
+          <img class="mark" src="logo.png" alt="Pink Me Up — Beauty Salon" />
           <span class="brand-text"><span class="b1" style="color:#c79294">Beauty Salon</span><span class="b2">Pink <em>me up</em></span></span>
         </span>
         <p class="fdesc">Vaš ritual ljepote u Čavlima, nadomak Rijeke. Tretmani lica, ruska pedikura, depilacija i njega kojom zaslužujete da budete razmaženi.</p>
@@ -926,7 +926,7 @@ onScroll();window.addEventListener('scroll',onScroll,{passive:true});
 const burger=document.getElementById('burger');
 const menu=document.getElementById('navmenu');
 const mask=document.getElementById('navmask');
-const toggleMenu=(open)=>{menu.classList.toggle('open',open);mask.classList.toggle('show',open);document.body.style.overflow=open?'hidden':'';};
+const toggleMenu=(open)=>{menu.classList.toggle('open',open);mask.classList.toggle('show',open);burger.classList.toggle('x',open);document.body.classList.toggle('menu-open',open);document.body.style.overflow=open?'hidden':'';};
 burger.addEventListener('click',()=>toggleMenu(!menu.classList.contains('open')));
 mask.addEventListener('click',()=>toggleMenu(false));
 menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>toggleMenu(false)));

@@ -101,6 +101,7 @@ header.nav.scrolled{
 .brand-text .b1{font-family:var(--sans);font-weight:500;font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:var(--ink-soft)}
 .brand-text .b2{font-family:var(--serif);font-weight:600;font-size:1.35rem;color:var(--wine);letter-spacing:.01em;margin-top:-2px}
 .brand-text .b2 em{font-family:var(--script);font-style:normal;color:var(--magenta);font-size:1.5rem}
+.brand-text .b3{display:block;font-family:var(--script);font-size:.92rem;color:var(--rose-gold);letter-spacing:.02em;margin-top:1px;line-height:1}
 
 nav ul{list-style:none;display:flex;gap:36px;align-items:center}
 nav a.link{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:400;color:var(--ink);position:relative;padding:6px 0;transition:color .3s}
@@ -331,6 +332,47 @@ section{position:relative}
 .member.owner .mtop{background:linear-gradient(150deg,var(--gold),var(--magenta-deep))}
 
 /* ============================================================
+   LOYALTY CARD
+   ============================================================ */
+.loyalty{background:linear-gradient(180deg,var(--paper),var(--blush) 55%,var(--paper))}
+.loy-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.loy-text .eyebrow{color:var(--magenta)}
+.loy-text h2{font-size:clamp(2.2rem,4.6vw,3.4rem);color:var(--wine);margin:14px 0 20px}
+.loy-text p{color:var(--ink-soft);font-size:1.06rem;margin-bottom:18px}
+.loy-rewards{display:flex;flex-direction:column;gap:14px;margin:26px 0 30px}
+.loy-reward{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid rgba(199,146,148,.2);border-radius:6px;padding:18px 22px;box-shadow:var(--shadow-sm)}
+.loy-reward .rb{width:48px;height:48px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:600;font-size:1.4rem;color:#fff}
+.loy-reward.r5 .rb{background:linear-gradient(145deg,var(--rose),var(--magenta))}
+.loy-reward.r10 .rb{background:linear-gradient(145deg,var(--gold),var(--magenta-deep))}
+.loy-reward .rt b{display:block;font-family:var(--serif);font-size:1.3rem;color:var(--wine);font-weight:600;line-height:1.1}
+.loy-reward .rt span{font-size:.92rem;color:var(--ink-soft)}
+.loy-note{font-size:.9rem;color:var(--ink-soft);font-style:italic}
+.loy-visual{display:flex;justify-content:center}
+.stampcard{
+  width:100%;max-width:440px;background:linear-gradient(150deg,var(--wine),var(--magenta-deep));
+  border-radius:18px;padding:34px 30px 26px;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;
+  transform:rotate(-2deg);transition:transform .6s var(--ease);
+}
+.loy-visual:hover .stampcard{transform:rotate(0)}
+.stampcard::before{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.12),transparent 70%)}
+.stampcard .sc-head{display:flex;align-items:center;gap:12px;margin-bottom:22px;position:relative;z-index:2}
+.stampcard .sc-head img{width:44px;height:44px;object-fit:contain;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
+.stampcard .sc-head .sct b{display:block;font-family:var(--serif);color:#fff;font-size:1.15rem;font-weight:600;line-height:1}
+.stampcard .sc-head .sct span{font-family:var(--script);color:var(--gold-soft);font-size:1rem}
+.stamp-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:11px;position:relative;z-index:2}
+.stamp{aspect-ratio:1;border:1.5px solid rgba(255,255,255,.45);border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.06);position:relative}
+.stamp.filled{background:rgba(255,255,255,.96);border-color:#fff}
+.stamp.filled svg{width:58%;height:58%;color:var(--magenta)}
+.stamp .snum{position:absolute;bottom:3px;right:6px;font-size:.6rem;color:rgba(255,255,255,.5);font-weight:500}
+.stamp.filled .snum{color:var(--rose)}
+.stamp.milestone{border-color:var(--gold-soft);border-width:2px}
+.stamp.milestone::after{content:attr(data-tag);position:absolute;top:-9px;left:50%;transform:translateX(-50%);font-size:.52rem;letter-spacing:.06em;text-transform:uppercase;background:var(--gold);color:#fff;padding:2px 7px;border-radius:30px;white-space:nowrap;font-weight:600}
+.stampcard .sc-foot{margin-top:24px;text-align:center;position:relative;z-index:2}
+.stampcard .sc-foot .scf1{font-family:var(--serif);color:#fff;font-size:1.2rem;font-weight:600;letter-spacing:.02em}
+.stampcard .sc-foot .scf1 b{color:var(--gold-soft)}
+.stampcard .sc-foot .scf2{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#e9c6d3;margin-top:5px}
+
+/* ============================================================
    CTA banner
    ============================================================ */
 .ctaband{background:linear-gradient(135deg,var(--magenta),var(--wine));color:#fff;padding:96px 0;position:relative;overflow:hidden;text-align:center}
@@ -375,6 +417,8 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
   .pillar.feature{grid-template-columns:1fr}
   .pillar.feature .fside{min-height:240px}
   .val-grid{grid-template-columns:repeat(2,1fr)}
+  .loy-grid{grid-template-columns:1fr;gap:44px}
+  .loy-visual{order:-1}
   .foot-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:760px){
@@ -399,6 +443,9 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
   .navmask.show{display:block}
   .sec{padding:84px 0}
   .price-list{columns:1}
+  .loy-grid{grid-template-columns:1fr;gap:36px}
+  .stampcard{transform:rotate(0);padding-top:30px}
+  .stamp.milestone::after{font-size:.5rem;padding:2px 6px}
   .team-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}
   .val-grid{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr;gap:40px}
@@ -442,6 +489,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
       <span class="brand-text">
         <span class="b1">Beauty Salon</span>
         <span class="b2">Pink <em>me up</em></span>
+        <span class="b3">Vaš kutak za ljepotu</span>
       </span>
     </a>
     <nav id="navmenu">
@@ -449,6 +497,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
         <li><a class="link" href="#about">Salon</a></li>
         <li><a class="link" href="#signature">Po čemu smo posebni</a></li>
         <li><a class="link" href="#services">Cjenik</a></li>
+        <li><a class="link" href="#loyalty">Vjernost</a></li>
         <li><a class="link" href="#team">Tim</a></li>
         <li><a class="link" href="#contact">Kontakt</a></li>
         <li><a class="btn" href="https://pink-me-up.book.app/" target="_blank" rel="noopener noreferrer">Rezervirajte</a></li>
@@ -855,6 +904,55 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
   </div>
 </section>
 
+<!-- ================= LOYALTY CARD ================= -->
+<section class="loyalty sec" id="loyalty">
+  <div class="wrap">
+    <div class="loy-grid">
+      <div class="loy-text reveal">
+        <span class="eyebrow">Vjernost se nagrađuje</span>
+        <h2>Naša nagradna kartica</h2>
+        <p>Jer vjernost zaslužuje više od osmijeha. Pri svakom tretmanu u salonu skupljate pečat na svojoj kartici — i što nas češće posjećujete, to vas više nagrađujemo.</p>
+        <div class="loy-rewards">
+          <div class="loy-reward r5 reveal d1">
+            <span class="rb">5.</span>
+            <span class="rt"><b>Svaki 5. tretman — 50%</b><span>Peti tretman plaćate upola cijene.</span></span>
+          </div>
+          <div class="loy-reward r10 reveal d2">
+            <span class="rb">10.</span>
+            <span class="rt"><b>Svaki 10. tretman — gratis</b><span>Deseti tretman je potpuno besplatan, na kuću.</span></span>
+          </div>
+        </div>
+        <p class="loy-note">Kartice se izdaju i ovjeravaju u salonu. Pitajte nas za svoju karticu pri sljedećem posjetu.</p>
+      </div>
+
+      <div class="loy-visual reveal d2">
+        <div class="stampcard" role="img" aria-label="Nagradna kartica Pink Me Up — svaki 5. tretman 50%, svaki 10. gratis">
+          <div class="sc-head">
+            <img src="logo.png" alt="" aria-hidden="true" />
+            <span class="sct"><b>Kartica vjernosti</b><span>Vaš kutak za ljepotu</span></span>
+          </div>
+          <div class="stamp-grid">
+            <div class="stamp filled"><svg viewBox="0 0 48 48" fill="currentColor"><path d="M24 38c-7-5-14-10-14-18a8 8 0 0114-5 8 8 0 0114 5c0 8-7 13-14 18z"/></svg><span class="snum">1</span></div>
+            <div class="stamp filled"><svg viewBox="0 0 48 48" fill="currentColor"><path d="M24 38c-7-5-14-10-14-18a8 8 0 0114-5 8 8 0 0114 5c0 8-7 13-14 18z"/></svg><span class="snum">2</span></div>
+            <div class="stamp filled"><svg viewBox="0 0 48 48" fill="currentColor"><path d="M24 38c-7-5-14-10-14-18a8 8 0 0114-5 8 8 0 0114 5c0 8-7 13-14 18z"/></svg><span class="snum">3</span></div>
+            <div class="stamp"><span class="snum">4</span></div>
+            <div class="stamp milestone" data-tag="−50%"><span class="snum">5</span></div>
+            <div class="stamp"><span class="snum">6</span></div>
+            <div class="stamp"><span class="snum">7</span></div>
+            <div class="stamp"><span class="snum">8</span></div>
+            <div class="stamp"><span class="snum">9</span></div>
+            <div class="stamp milestone" data-tag="Gratis"><span class="snum">10</span></div>
+          </div>
+          <div class="sc-foot">
+            <div class="scf1">Svaki <b>5.</b> tretman 50% · svaki <b>10.</b> gratis</div>
+            <div class="scf2">Pon – Pet 08–21 · Vikendom zatvoreno</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= CTA BAND ================= -->
 <section class="ctaband">
   <svg class="bg-b x1" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M60 46c-10-20-30-23-40-13-9 9-3 27 10 32 9 4 20 1 30-5M60 46c-7 9-7 24 0 38M60 46c10-20 30-23 40-13 9 9 3 27-10 32-9 4-20 1-30-5M60 46c-10 13-10 36-10 52M60 46c10 13 10 36 10 52"/></svg>
@@ -875,7 +973,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
       <div class="fcol">
         <span class="brand">
           <img class="mark" src="logo.png" alt="Pink Me Up — Beauty Salon" />
-          <span class="brand-text"><span class="b1" style="color:#c79294">Beauty Salon</span><span class="b2">Pink <em>me up</em></span></span>
+          <span class="brand-text"><span class="b1" style="color:#c79294">Beauty Salon</span><span class="b2">Pink <em>me up</em></span><span class="b3">Vaš kutak za ljepotu</span></span>
         </span>
         <p class="fdesc">Vaš ritual ljepote u Čavlima, nadomak Rijeke. Tretmani lica, ruska pedikura, depilacija i njega kojom zaslužujete da budete razmaženi.</p>
         <div class="foot-soc">
@@ -888,6 +986,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
         <h4>Kontakt</h4>
         <div class="fcontact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span><a href="https://www.google.com/maps/search/?api=1&amp;query=%C5%BDe%C5%BEelovo%20Selo%203%2C%2051219%20%C4%8Davle" target="_blank" rel="noopener noreferrer">Žeželovo Selo 3<br/>51219 Čavle, Hrvatska</a></span></div>
         <div class="fcontact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4h3l2 5-2 1c1 3 3 5 6 6l1-2 5 2v3c0 1-1 2-2 2C12 24 0 12 0 3c0-1 1-2 2-2"/></svg><span><a href="tel:+385989677872">+385 98 967 78 72</a></span></div>
+        <div class="fcontact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Pon – Pet: 08:00 – 21:00<br/><span style="color:#a98494">Vikendom zatvoreno</span></span></div>
       </div>
 
       <div class="fcol">

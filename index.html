@@ -101,7 +101,9 @@ header.nav.scrolled{
 .brand-text .b1{font-family:var(--sans);font-weight:500;font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:var(--ink-soft)}
 .brand-text .b2{font-family:var(--serif);font-weight:600;font-size:1.35rem;color:var(--wine);letter-spacing:.01em;margin-top:-2px}
 .brand-text .b2 em{font-family:var(--script);font-style:normal;color:var(--magenta);font-size:1.5rem}
-.brand-text .b3{display:block;font-family:var(--script);font-size:.92rem;color:var(--rose-gold);letter-spacing:.02em;margin-top:1px;line-height:1}
+.brand-text .b3{display:flex;align-items:center;gap:7px;font-family:var(--sans);font-weight:600;font-size:.56rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-top:4px;line-height:1}
+.brand-text .b3::before,.brand-text .b3::after{content:"";height:1px;flex:1;max-width:18px;background:linear-gradient(90deg,transparent,var(--gold-soft))}
+.brand-text .b3::after{background:linear-gradient(90deg,var(--gold-soft),transparent)}
 
 nav ul{list-style:none;display:flex;gap:36px;align-items:center}
 nav a.link{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:400;color:var(--ink);position:relative;padding:6px 0;transition:color .3s}

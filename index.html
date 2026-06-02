@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Pink Me Up — Beauty Salon · Čavle, Rijeka</title>
+<title>Pink Me Up · Beauty Salon · Čavle, Rijeka</title>
 <link rel="icon" type="image/png" href="logo.png" />
-<meta name="description" content="Beauty Salon Pink Me Up u Čavlima, nadomak Rijeke — vrhunski tretmani lica Skeyndor, ruska pedikura, Lycon depilacija, manikura, lash & brow lift i njega tijela. Mjesto gdje ljepota postaje ritual." />
+<meta name="description" content="Beauty Salon Pink Me Up u Čavlima, nadomak Rijeke. Vrhunski tretmani lica Skeyndor, ruska pedikura, Lycon depilacija, manikura, lash & brow lift i njega tijela. Mjesto gdje ljepota postaje ritual." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet" />
 <style>
 /* ============================================================
-   PINK ME UP — Beauty Salon
+   PINK ME UP · Beauty Salon
    Premium luxury identity · single-file build
    ============================================================ */
 
@@ -341,13 +341,17 @@ section{position:relative}
 .loy-text .eyebrow{color:var(--magenta)}
 .loy-text h2{font-size:clamp(2.2rem,4.6vw,3.4rem);color:var(--wine);margin:14px 0 20px}
 .loy-text p{color:var(--ink-soft);font-size:1.06rem;margin-bottom:18px}
-.loy-rewards{display:flex;flex-direction:column;gap:14px;margin:26px 0 30px}
-.loy-reward{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid rgba(199,146,148,.2);border-radius:6px;padding:18px 22px;box-shadow:var(--shadow-sm)}
-.loy-reward .rb{width:48px;height:48px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:600;font-size:1.4rem;color:#fff}
-.loy-reward.r5 .rb{background:linear-gradient(145deg,var(--rose),var(--magenta))}
-.loy-reward.r10 .rb{background:linear-gradient(145deg,var(--gold),var(--magenta-deep))}
-.loy-reward .rt b{display:block;font-family:var(--serif);font-size:1.3rem;color:var(--wine);font-weight:600;line-height:1.1}
-.loy-reward .rt span{font-size:.92rem;color:var(--ink-soft)}
+.loy-choice-intro{font-size:1rem;color:var(--ink);margin:6px 0 18px}
+.loy-choice-intro b{color:var(--magenta);font-weight:600}
+.loy-choice{display:grid;grid-template-columns:1fr auto 1fr;gap:0;align-items:stretch;margin:0 0 26px;border-radius:10px;overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid rgba(199,146,148,.2)}
+.loy-opt{background:#fff;padding:26px 24px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.loy-opt .rb{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:600;font-size:1.5rem;color:#fff;margin-bottom:14px}
+.loy-opt .rb.r5{background:linear-gradient(145deg,var(--rose),var(--magenta))}
+.loy-opt .rb.r10{background:linear-gradient(145deg,var(--gold),var(--magenta-deep))}
+.loy-opt b{font-family:var(--serif);font-size:1.32rem;color:var(--wine);font-weight:600;line-height:1.15;margin-bottom:6px}
+.loy-opt span{font-size:.92rem;color:var(--ink-soft);line-height:1.45}
+.loy-or{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--wine),var(--magenta-deep));padding:0 4px;position:relative}
+.loy-or span{font-family:var(--sans);font-weight:600;font-size:.82rem;letter-spacing:.16em;color:#fff;background:rgba(255,255,255,.0);padding:10px 6px;writing-mode:vertical-rl;text-orientation:upright;letter-spacing:.08em}
 .loy-note{font-size:.9rem;color:var(--ink-soft);font-style:italic}
 .loy-visual{display:flex;justify-content:center}
 .stampcard{
@@ -446,6 +450,9 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
   .sec{padding:84px 0}
   .price-list{columns:1}
   .loy-grid{grid-template-columns:1fr;gap:36px}
+  .loy-choice{grid-template-columns:1fr}
+  .loy-or{padding:8px 0}
+  .loy-or span{writing-mode:horizontal-tb;text-orientation:mixed;letter-spacing:.2em;padding:6px}
   .stampcard{transform:rotate(0);padding-top:30px}
   .stamp.milestone::after{font-size:.5rem;padding:2px 6px}
   .team-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}
@@ -487,7 +494,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
 <header class="nav" id="nav">
   <div class="nav-inner">
     <a href="#top" class="brand">
-      <img class="mark" src="logo.png" alt="Pink Me Up — Beauty Salon" />
+      <img class="mark" src="logo.png" alt="Pink Me Up · Beauty Salon" />
       <span class="brand-text">
         <span class="b1">Beauty Salon</span>
         <span class="b2">Pink <em>me up</em></span>
@@ -528,7 +535,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
         <span class="sub-script l2">Vaš kutak za ljepotu</span>
       </h1>
       <p class="hero-lead">Mjesto gdje njega prestaje biti obaveza, a postaje ritual.</p>
-      <p class="hero-desc">Vrhunski tretmani lica sa Skeyndor kozmetikom, ruska pedikura, Lycon depilacija te savršena njega ruku i tijela — u rukama posvećenih stručnjakinja.</p>
+      <p class="hero-desc">Vrhunski tretmani lica sa Skeyndor kozmetikom, ruska pedikura, Lycon depilacija te savršena njega ruku i tijela, u rukama posvećenih stručnjakinja.</p>
       <div class="hero-cta">
         <a href="https://pink-me-up.book.app/" target="_blank" rel="noopener noreferrer" class="btn">Rezervirajte termin</a>
         <a href="#services" class="btn ghost">Pogledajte cjenik</a>
@@ -564,8 +571,8 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
       <div class="about-text reveal">
         <span class="eyebrow">O salonu</span>
         <h2>Ljepota s potpisom, briga sa srcem.</h2>
-        <p>Beauty Salon <strong>Pink Me Up</strong> otvorio je svoja vrata <strong>2020. godine</strong> u Čavlima, nadomak Rijeke, s jasnom vizijom — stvoriti prostor u kojem se svaka osoba osjeća viđeno, opušteno i njegovano od trenutka kad uđe.</p>
-        <p>Iza salona stoji <strong>Biljana</strong>, kozmetičarka koja je svoj grafički talent zamijenila strašću prema njezi kože i ljepoti. Ta posvećenost detalju danas se osjeti u svakom tretmanu — od ruske pedikure do profesionalnih tretmana lica vrhunskom <strong>Skeyndor</strong> kozmetikom.</p>
+        <p>Beauty Salon <strong>Pink Me Up</strong> otvorio je svoja vrata <strong>2020. godine</strong> u Čavlima, nadomak Rijeke, s jasnom vizijom: stvoriti prostor u kojem se svaka osoba osjeća viđeno, opušteno i njegovano od trenutka kad uđe.</p>
+        <p>Iza salona stoji <strong>Biljana</strong>, kozmetičarka koja je svoj grafički talent zamijenila strašću prema njezi kože i ljepoti. Ta posvećenost detalju danas se osjeti u svakom tretmanu, od ruske pedikure do profesionalnih tretmana lica vrhunskom <strong>Skeyndor</strong> kozmetikom.</p>
         <p>Ne radimo na brzinu i ne radimo „kao svi". Svaki termin je vaše vrijeme, posvećeno samo vama.</p>
         <div class="sig">Pink Me Up<small>Beauty Salon · Čavle</small></div>
       </div>
@@ -591,7 +598,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
     <div class="sec-head center reveal">
       <span class="eyebrow">Po čemu se razlikujemo</span>
       <h2>Četiri razloga zbog kojih nas pamtite</h2>
-      <p>Ne nudimo samo tretmane — nudimo standard koji se rijetko pronalazi. Najbolji materijali, dokazane tehnike i pristup u kojem ste vi uvijek u središtu.</p>
+      <p>Ne nudimo samo tretmane, nego standard koji se rijetko pronalazi. Najbolji materijali, dokazane tehnike i pristup u kojem ste vi uvijek u središtu.</p>
       <div class="divider" style="margin-top:24px"><span class="l"></span><svg viewBox="0 0 100 100" fill="currentColor"><path d="M50 38c-7-9-17-9-17-1 0 7 10 11 17 17 7-6 17-10 17-17 0-8-10-8-17 1z"/></svg><span class="l r"></span></div>
     </div>
 
@@ -600,13 +607,13 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
       <!-- Feature: Ruska pedikura -->
       <div class="pillar feature reveal">
         <div class="fbody">
-          <span class="pnum">— Naša specijalnost 01</span>
+          <span class="pnum">Naša specijalnost · 01</span>
           <div class="picon">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 30c-3 4-2 9 3 10s9-2 9-7M30 14c4-3 9-2 10 3s-2 9-7 9"/><path d="M14 30c-4-6-3-15 4-20s17-3 20 4"/><circle cx="32" cy="16" r="2.5"/></svg>
           </div>
           <h3>Ruska (suha) pedikura</h3>
-          <p>Precizna tehnika izvedena profesionalnim rotacijskim instrumentima — bez namakanja i bez rezanja. Higijenski besprijekorna, idealna za osjetljiva i problematična stopala, s rezultatom koji traje znatno dulje od klasične pedikure.</p>
-          <p>Stopala ostaju glatka, uredna i njegovana — onako kako bi uvijek trebala izgledati.</p>
+          <p>Precizna tehnika izvedena profesionalnim rotacijskim instrumentima, bez namakanja i bez rezanja. Higijenski besprijekorna, idealna za osjetljiva i problematična stopala, s rezultatom koji traje znatno dulje od klasične pedikure.</p>
+          <p>Stopala ostaju glatka, uredna i njegovana, onako kako bi uvijek trebala izgledati.</p>
           <span class="ptag">❋ Maksimalna preciznost &amp; higijena</span>
         </div>
         <div class="fside" aria-hidden="true">
@@ -625,28 +632,28 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
 
       <!-- Skeyndor -->
       <div class="pillar reveal d1">
-        <span class="pnum">— 02</span>
+        <span class="pnum">02</span>
         <div class="picon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="14"/><path d="M24 10v4M24 34v4M10 24h4M34 24h4M14 14l3 3M31 31l3 3M34 14l-3 3M17 31l-3 3"/></svg></div>
         <h3>Tretmani lica · Skeyndor</h3>
-        <p>Profesionalna španjolska kozmetika svjetske klase. Od dubinske hidratacije i opskrbe kože kisikom do korektivnih tretmana protiv bora — svaki tretman prilagođen je upravo vašoj koži.</p>
+        <p>Profesionalna španjolska kozmetika svjetske klase. Od dubinske hidratacije i opskrbe kože kisikom do korektivnih tretmana protiv bora, svaki tretman prilagođen je upravo vašoj koži.</p>
         <span class="ptag">❋ Vidljivi rezultati, vrhunski sastojci</span>
       </div>
 
       <!-- Lycon -->
       <div class="pillar reveal d2">
-        <span class="pnum">— 03</span>
+        <span class="pnum">03</span>
         <div class="picon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 36c6-18 12-26 24-30M14 30c8-3 16-2 22 2M10 36h28"/><path d="M30 8c2 3 2 6 0 9"/></svg></div>
         <h3>Lycon premium depilacija</h3>
-        <p>Vrhunski australski vosak koji uklanja i najkraće dlačice uz minimalnu nelagodu. Nježan prema koži, učinkovit do posljednjeg detalja — od osjetljivih zona do cijelog tijela.</p>
+        <p>Vrhunski australski vosak koji uklanja i najkraće dlačice uz minimalnu nelagodu. Nježan prema koži, učinkovit do posljednjeg detalja, od osjetljivih zona do cijelog tijela.</p>
         <span class="ptag">❋ Glatka koža, manje nelagode</span>
       </div>
 
       <!-- Lash & Brow -->
       <div class="pillar reveal d1">
-        <span class="pnum">— 04</span>
+        <span class="pnum">04</span>
         <div class="picon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 28c8-10 24-10 32 0"/><path d="M14 26l-3 6M24 24l0 8M34 26l3 6M19 25l-2 7M29 25l2 7"/></svg></div>
         <h3>Lash &amp; Brow lift</h3>
-        <p>Podizanje trepavica i obrva za prirodno otvoren, budan pogled koji traje tjednima. Bez maskare, bez svakodnevnog truda — samo vi, u najboljem izdanju.</p>
+        <p>Podizanje trepavica i obrva za prirodno otvoren, budan pogled koji traje tjednima. Bez maskare, bez svakodnevnog truda. Samo vi, u najboljem izdanju.</p>
         <span class="ptag">❋ Pogled koji ostavlja dojam</span>
       </div>
 
@@ -675,12 +682,12 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
       <div class="val reveal d3">
         <div class="vi"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 33S6 24 6 15a7 7 0 0114-2 7 7 0 0114 2c0 9-14 18-14 18z"/></svg></div>
         <h4>Personalizirani pristup</h4>
-        <p>Svaki tretman prilagođen vašoj koži, željama i ritmu — bez žurbe.</p>
+        <p>Svaki tretman prilagođen vašoj koži, željama i ritmu, bez žurbe.</p>
       </div>
       <div class="val reveal d4">
         <div class="vi"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6l3.5 7.5L31 15l-5.5 5.5L27 28l-7-4-7 4 1.5-7.5L9 15l7.5-1.5z"/></svg></div>
         <h4>Vrhunski materijali</h4>
-        <p>Radimo isključivo s provjerenim premium markama — Skeyndor &amp; Lycon.</p>
+        <p>Radimo isključivo s provjerenim premium markama: Skeyndor i Lycon.</p>
       </div>
     </div>
   </div>
@@ -721,7 +728,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
           <div class="price-row"><span class="pn">Tretman za opskrbu kože kisikom<small>Skeyndor Power Oxygen</small></span><span class="leader"></span><span class="pp">37 €</span></div>
           <div class="price-row"><span class="pn">Face-lite tretman<small>obnova kolagena i smanjenje pigmentacijskih mrlja</small></span><span class="leader"></span><span class="pp">10 €</span></div>
           <div class="price-row promo"><span class="pn">Face-lite paket<span class="pkg">10 tretmana</span></span><span class="leader"></span><span class="pp">80 €</span></div>
-          <div class="price-row promo"><span class="pn">Čišćenje lica — paket<span class="pkg">5 + 1 gratis</span></span><span class="leader"></span><span class="pp">140 €</span></div>
+          <div class="price-row promo"><span class="pn">Čišćenje lica, paket<span class="pkg">5 + 1 gratis</span></span><span class="leader"></span><span class="pp">140 €</span></div>
           <div class="price-row"><span class="pn">Eye Perfection<small>tretman za umorne oči + presoterapija</small></span><span class="leader"></span><span class="pp">30 €</span></div>
         </div>
         <p class="svc-note">Svaki tretman lica započinje analizom kože i preporukom najprikladnijeg postupka za vaš tip kože.</p>
@@ -733,8 +740,8 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
           <h3>Šminkanje</h3>
         </div>
         <div class="price-list">
-          <div class="price-row"><span class="pn">Šminkanje — dnevni look</span><span class="leader"></span><span class="pp">30 €</span></div>
-          <div class="price-row"><span class="pn">Šminkanje — glam look</span><span class="leader"></span><span class="pp">35 €</span></div>
+          <div class="price-row"><span class="pn">Šminkanje: dnevni look</span><span class="leader"></span><span class="pp">30 €</span></div>
+          <div class="price-row"><span class="pn">Šminkanje: glam look</span><span class="leader"></span><span class="pp">35 €</span></div>
         </div>
       </div>
     </div>
@@ -755,17 +762,17 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
           <div class="price-row"><span class="pn">Trajni lak s jačom bazom<small>beton gel</small></span><span class="leader"></span><span class="pp">30 €</span></div>
           <div class="price-row"><span class="pn">Trajni lak s produžavanjem<small>do 3 nokta</small></span><span class="leader"></span><span class="pp">28 €</span></div>
           <div class="price-row"><span class="pn">Gel ugradnja na prirodne nokte</span><span class="leader"></span><span class="pp">35 €</span></div>
-          <div class="price-row"><span class="pn">Gel ugradnja — medium<small>šablone</small></span><span class="leader"></span><span class="pp">40 €</span></div>
-          <div class="price-row"><span class="pn">Gel ugradnja — large<small>šablone</small></span><span class="leader"></span><span class="pp">43 €</span></div>
-          <div class="price-row"><span class="pn">Gel ugradnja — XXXL<small>šablone</small></span><span class="leader"></span><span class="pp">50 €</span></div>
-          <div class="price-row"><span class="pn">Gel korekcija — medium<small>popust do 4 nokta</small></span><span class="leader"></span><span class="pp">35 €</span></div>
-          <div class="price-row"><span class="pn">Gel korekcija — large</span><span class="leader"></span><span class="pp">38 €</span></div>
-          <div class="price-row"><span class="pn">Gel korekcija — XXXL</span><span class="leader"></span><span class="pp">44 €</span></div>
+          <div class="price-row"><span class="pn">Gel ugradnja: medium<small>šablone</small></span><span class="leader"></span><span class="pp">40 €</span></div>
+          <div class="price-row"><span class="pn">Gel ugradnja: large<small>šablone</small></span><span class="leader"></span><span class="pp">43 €</span></div>
+          <div class="price-row"><span class="pn">Gel ugradnja: XXXL<small>šablone</small></span><span class="leader"></span><span class="pp">50 €</span></div>
+          <div class="price-row"><span class="pn">Gel korekcija: medium<small>popust do 4 nokta</small></span><span class="leader"></span><span class="pp">35 €</span></div>
+          <div class="price-row"><span class="pn">Gel korekcija: large</span><span class="leader"></span><span class="pp">38 €</span></div>
+          <div class="price-row"><span class="pn">Gel korekcija: XXXL</span><span class="leader"></span><span class="pp">44 €</span></div>
           <div class="price-row"><span class="pn">Skidanje trajnog laka</span><span class="leader"></span><span class="pp">12 €</span></div>
           <div class="price-row"><span class="pn">Skidanje gela</span><span class="leader"></span><span class="pp">15 €</span></div>
-          <div class="price-row"><span class="pn">Popravak do 2 nokta — trajni lak</span><span class="leader"></span><span class="pp">5 €</span></div>
-          <div class="price-row"><span class="pn">Popravak 1–2 nokta — gel</span><span class="leader"></span><span class="pp">7 €</span></div>
-          <div class="price-row"><span class="pn">Nail art — zahtjevniji<small>1 nokat</small></span><span class="leader"></span><span class="pp">3 €</span></div>
+          <div class="price-row"><span class="pn">Popravak do 2 nokta (trajni lak)</span><span class="leader"></span><span class="pp">5 €</span></div>
+          <div class="price-row"><span class="pn">Popravak 1–2 nokta (gel)</span><span class="leader"></span><span class="pp">7 €</span></div>
+          <div class="price-row"><span class="pn">Nail art, zahtjevniji<small>1 nokat</small></span><span class="leader"></span><span class="pp">3 €</span></div>
           <div class="price-row"><span class="pn">Baby boomer / French / Chrome / Cat eye<small>10 noktiju</small></span><span class="leader"></span><span class="pp">10 €</span></div>
           <div class="price-row"><span class="pn">Parafinska kupka ruke</span><span class="leader"></span><span class="pp">7 €</span></div>
           <div class="price-row promo"><span class="pn">Hand Spa Ritual<small>peeling + parafin + masaža</small></span><span class="leader"></span><span class="pp">10 €</span></div>
@@ -786,14 +793,14 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
           <div class="price-row"><span class="pn">Estetska njega stopala</span><span class="leader"></span><span class="pp">21 €</span></div>
           <div class="price-row"><span class="pn">Estetska njega stopala + lak</span><span class="leader"></span><span class="pp">24 €</span></div>
           <div class="price-row"><span class="pn">Estetska njega stopala + trajni lak</span><span class="leader"></span><span class="pp">35 €</span></div>
-          <div class="price-row"><span class="pn">Trajni lak — noge</span><span class="leader"></span><span class="pp">22 €</span></div>
-          <div class="price-row"><span class="pn">Trajni lak — ruke + noge</span><span class="leader"></span><span class="pp">42 €</span></div>
+          <div class="price-row"><span class="pn">Trajni lak: noge</span><span class="leader"></span><span class="pp">22 €</span></div>
+          <div class="price-row"><span class="pn">Trajni lak: ruke i noge</span><span class="leader"></span><span class="pp">42 €</span></div>
           <div class="price-row"><span class="pn">Trajni lak ruke + noge<small>uz estetsku njegu stopala</small></span><span class="leader"></span><span class="pp">54 €</span></div>
-          <div class="price-row"><span class="pn">Parafinska kupka — noge</span><span class="leader"></span><span class="pp">9 €</span></div>
+          <div class="price-row"><span class="pn">Parafinska kupka: noge</span><span class="leader"></span><span class="pp">9 €</span></div>
           <div class="price-row"><span class="pn">Estetska njega + parafin</span><span class="leader"></span><span class="pp">29 €</span></div>
           <div class="price-row"><span class="pn">Estetska njega + parafin + lak</span><span class="leader"></span><span class="pp">30 €</span></div>
           <div class="price-row"><span class="pn">Estetska njega + parafin + trajni lak</span><span class="leader"></span><span class="pp">42 €</span></div>
-          <div class="price-row"><span class="pn">Dogradnja nokta — noge</span><span class="leader"></span><span class="pp">4 €</span></div>
+          <div class="price-row"><span class="pn">Dogradnja nokta: noge</span><span class="leader"></span><span class="pp">4 €</span></div>
         </div>
       </div>
     </div>
@@ -807,9 +814,9 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
           <span class="sm">Premium australski vosak</span>
         </div>
         <div class="price-list">
-          <div class="price-row"><span class="pn">Bikini — Basic</span><span class="leader"></span><span class="pp">15 €</span></div>
-          <div class="price-row"><span class="pn">Bikini — California</span><span class="leader"></span><span class="pp">20 €</span></div>
-          <div class="price-row"><span class="pn">Bikini — Hollywood</span><span class="leader"></span><span class="pp">30 €</span></div>
+          <div class="price-row"><span class="pn">Bikini Basic</span><span class="leader"></span><span class="pp">15 €</span></div>
+          <div class="price-row"><span class="pn">Bikini California</span><span class="leader"></span><span class="pp">20 €</span></div>
+          <div class="price-row"><span class="pn">Bikini Hollywood</span><span class="leader"></span><span class="pp">30 €</span></div>
           <div class="price-row"><span class="pn">Nadusnice</span><span class="leader"></span><span class="pp">13 €</span></div>
           <div class="price-row"><span class="pn">Nadusnice i brada</span><span class="leader"></span><span class="pp">20 €</span></div>
           <div class="price-row"><span class="pn">Lice</span><span class="leader"></span><span class="pp">22 €</span></div>
@@ -824,8 +831,8 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
           <div class="price-row"><span class="pn">Cijele noge + California</span><span class="leader"></span><span class="pp">40 €</span></div>
           <div class="price-row"><span class="pn">Cijele noge + Hollywood</span><span class="leader"></span><span class="pp">50 €</span></div>
           <div class="price-row"><span class="pn">Prsa i trbuh</span><span class="leader"></span><span class="pp">35 €</span></div>
-          <div class="price-row"><span class="pn">Leđa — parcijalno</span><span class="leader"></span><span class="pp">40 €</span></div>
-          <div class="price-row"><span class="pn">Leđa — cijela</span><span class="leader"></span><span class="pp">72 €</span></div>
+          <div class="price-row"><span class="pn">Leđa: parcijalno</span><span class="leader"></span><span class="pp">40 €</span></div>
+          <div class="price-row"><span class="pn">Leđa: cijela</span><span class="leader"></span><span class="pp">72 €</span></div>
         </div>
       </div>
     </div>
@@ -838,11 +845,11 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
           <h3>Tretmani tijela &amp; masaže</h3>
         </div>
         <div class="price-list">
-          <div class="price-row"><span class="pn">Masaža — pola sata<small>leđa</small></span><span class="leader"></span><span class="pp">15 €</span></div>
-          <div class="price-row"><span class="pn">Masaža — sat vremena<small>cijelo tijelo</small></span><span class="leader"></span><span class="pp">30 €</span></div>
+          <div class="price-row"><span class="pn">Masaža: pola sata<small>leđa</small></span><span class="leader"></span><span class="pp">15 €</span></div>
+          <div class="price-row"><span class="pn">Masaža: sat vremena<small>cijelo tijelo</small></span><span class="leader"></span><span class="pp">30 €</span></div>
           <div class="price-row promo"><span class="pn">Parcijalna masaža<span class="pkg">Promo · 5 tretmana</span></span><span class="leader"></span><span class="pp">60 €</span></div>
         </div>
-        <p class="svc-note">Idealan ritual opuštanja nakon napornog tjedna — sami ili u kombinaciji s tretmanom lica.</p>
+        <p class="svc-note">Idealan ritual opuštanja nakon napornog tjedna, sami ili u kombinaciji s tretmanom lica.</p>
       </div>
     </div>
 
@@ -872,7 +879,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
     <div class="sec-head center reveal">
       <span class="eyebrow">Naš tim</span>
       <h2>Ruke kojima vjerujete</h2>
-      <p>Tri stručnjakinje, jedna zajednička posvećenost — vaše zadovoljstvo i ljepota koja se osjeti.</p>
+      <p>Tri stručnjakinje, jedna zajednička posvećenost: vaše zadovoljstvo i ljepota koja se osjeti.</p>
     </div>
     <div class="team-grid">
       <div class="member owner reveal d1">
@@ -913,22 +920,26 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
       <div class="loy-text reveal">
         <span class="eyebrow">Vjernost se nagrađuje</span>
         <h2>Naša nagradna kartica</h2>
-        <p>Jer vjernost zaslužuje više od osmijeha. Pri svakom tretmanu u salonu skupljate pečat na svojoj kartici — i što nas češće posjećujete, to vas više nagrađujemo.</p>
-        <div class="loy-rewards">
-          <div class="loy-reward r5 reveal d1">
-            <span class="rb">5.</span>
-            <span class="rt"><b>Svaki 5. tretman — 50%</b><span>Peti tretman plaćate upola cijene.</span></span>
+        <p>Jer vjernost zaslužuje više od osmijeha. Pri svakom tretmanu u salonu skupljate pečat na svojoj kartici, a kad je popunite, sami birate svoju nagradu.</p>
+        <p class="loy-choice-intro">Odaberite <b>jednu</b> od dvije pogodnosti:</p>
+        <div class="loy-choice">
+          <div class="loy-opt reveal d1">
+            <span class="rb r5">5.</span>
+            <b>Svaki 5. tretman 50%</b>
+            <span>Peti tretman plaćate upola cijene.</span>
           </div>
-          <div class="loy-reward r10 reveal d2">
-            <span class="rb">10.</span>
-            <span class="rt"><b>Svaki 10. tretman — gratis</b><span>Deseti tretman je potpuno besplatan, na kuću.</span></span>
+          <div class="loy-or"><span>ILI</span></div>
+          <div class="loy-opt reveal d2">
+            <span class="rb r10">10.</span>
+            <b>Svaki 10. tretman gratis</b>
+            <span>Deseti tretman je potpuno besplatan, na kuću.</span>
           </div>
         </div>
         <p class="loy-note">Kartice se izdaju i ovjeravaju u salonu. Pitajte nas za svoju karticu pri sljedećem posjetu.</p>
       </div>
 
       <div class="loy-visual reveal d2">
-        <div class="stampcard" role="img" aria-label="Nagradna kartica Pink Me Up — svaki 5. tretman 50%, svaki 10. gratis">
+        <div class="stampcard" role="img" aria-label="Nagradna kartica Pink Me Up: svaki 5. tretman 50% ili svaki 10. gratis">
           <div class="sc-head">
             <img src="logo.png" alt="" aria-hidden="true" />
             <span class="sct"><b>Kartica vjernosti</b><span>Vaš kutak za ljepotu</span></span>
@@ -974,7 +985,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
     <div class="foot-grid">
       <div class="fcol">
         <span class="brand">
-          <img class="mark" src="logo.png" alt="Pink Me Up — Beauty Salon" />
+          <img class="mark" src="logo.png" alt="Pink Me Up · Beauty Salon" />
           <span class="brand-text"><span class="b1" style="color:#c79294">Beauty Salon</span><span class="b2">Pink <em>me up</em></span><span class="b3">Vaš kutak za ljepotu</span></span>
         </span>
         <p class="fdesc">Vaš kutak za ljepotu u Čavlima, nadomak Rijeke. Tretmani lica, ruska pedikura, depilacija i njega kojom zaslužujete da budete razmaženi.</p>
@@ -993,7 +1004,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
 
       <div class="fcol">
         <h4>Rezervacije</h4>
-        <p style="color:#cdaab9;margin-bottom:18px">Termin rezervirajte online u nekoliko sekundi — bilo kada, s bilo kojeg uređaja.</p>
+        <p style="color:#cdaab9;margin-bottom:18px">Termin rezervirajte online u nekoliko sekundi, bilo kada i s bilo kojeg uređaja.</p>
         <a href="https://pink-me-up.book.app/" target="_blank" rel="noopener noreferrer" class="btn" style="margin-bottom:18px">Rezervirajte online</a>
         <p><a href="#services">Pogledajte cjenik →</a></p>
       </div>

@@ -121,6 +121,7 @@ nav a.link:hover::after{width:100%}
 .btn.light{background:#fff;color:var(--wine);border-color:#fff}
 .btn.light:hover{background:var(--blush);border-color:var(--blush);color:var(--wine)}
 
+.menu-head,.menu-foot{display:none}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px;position:relative;z-index:1002}
 .burger span{width:24px;height:2px;background:var(--wine);transition:.3s var(--ease);transform-origin:center}
 .burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
@@ -399,7 +400,7 @@ footer .fcol p,footer .fcol a{font-size:.95rem;color:#d8b8c4;margin-bottom:10px;
 footer .fcol a:hover{color:var(--gold-soft)}
 footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
 .foot-soc{display:flex;gap:12px}
-.foot-soc a{width:46px;height:46px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.06);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#e9cdd7;transition:.35s var(--ease)}
+.foot-soc a{width:46px;height:46px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.06);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#e9cdd7;transition:.35s var(--ease);line-height:0}
 .foot-soc a:hover{background:var(--magenta);border-color:var(--magenta);color:#fff;transform:translateY(-3px)}
 .foot-soc a svg{width:19px;height:19px;display:block}
 .fcontact-line{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}
@@ -430,22 +431,50 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
   .wrap,.nav-inner,.hero-inner{padding-left:22px;padding-right:22px}
   nav ul{display:none}
   .burger{display:flex}
-  nav.open ul{
-    display:flex;position:fixed;top:0;right:0;bottom:0;width:80%;max-width:330px;
-    flex-direction:column;gap:0;
-    background:linear-gradient(180deg,#fffaf8,#fbeef1);
-    padding:104px 34px 40px;box-shadow:-20px 0 60px rgba(110,31,67,.22);z-index:1001;
-    align-items:flex-start;border-left:2px solid var(--gold-soft);
-    animation:slideIn .4s var(--ease);
+  /* full-screen premium menu */
+  nav.open{
+    position:fixed;inset:0;z-index:1001;display:flex;flex-direction:column;
+    background:linear-gradient(165deg,#fff8f6 0%,#fbe9ee 55%,#f6dbe4 100%);
+    padding:calc(env(safe-area-inset-top) + 20px) 28px calc(env(safe-area-inset-bottom) + 26px);
+    animation:fadeMenu .35s var(--ease);overflow-y:auto;
   }
-  @keyframes slideIn{from{transform:translateX(100%)}to{transform:translateX(0)}}
-  nav.open ul li{width:100%;border-bottom:1px solid var(--blush-deep)}
-  nav.open ul li a.link{display:block;padding:18px 2px;font-size:.95rem;color:var(--wine);letter-spacing:.12em}
-  nav.open ul li a.link::after{display:none}
-  nav.open ul li .btn{margin-top:24px}
+  @keyframes fadeMenu{from{opacity:0}to{opacity:1}}
+  nav.open::after{content:"";position:absolute;right:-70px;bottom:-40px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(231,138,166,.28),transparent 70%);pointer-events:none}
+  nav.open .menu-head{
+    display:flex;align-items:center;justify-content:space-between;
+    padding-bottom:22px;border-bottom:1px solid var(--blush-deep);position:relative;z-index:2;
+  }
+  nav.open .menu-head .brand{display:flex;align-items:center;gap:11px}
+  nav.open .menu-head .mark{width:46px;height:46px}
+  nav.open .menu-head .brand-text .b2{font-family:var(--serif);font-weight:600;font-size:1.3rem;color:var(--wine);line-height:1}
+  nav.open .menu-head .brand-text .b2 em{font-family:var(--script);font-style:normal;color:var(--magenta);font-size:1.45rem}
+  nav.open .menu-head .brand-text .b3{display:flex;align-items:center;gap:6px;font-family:var(--sans);font-weight:600;font-size:.5rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-top:3px}
+  nav.open .menu-head .brand-text .b3::before{content:"";height:1px;width:14px;background:linear-gradient(90deg,transparent,var(--gold-soft))}
+  .menu-close{background:#fff;border:1px solid var(--blush-deep);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--wine);cursor:pointer;flex:none;transition:.3s var(--ease)}
+  .menu-close:active{transform:scale(.92)}
+  nav.open ul{
+    display:flex;flex-direction:column;gap:0;list-style:none;
+    margin:10px 0;position:relative;z-index:2;
+  }
+  nav.open ul li{width:100%;border-bottom:1px solid rgba(199,146,148,.28)}
+  nav.open ul li:last-child{border-bottom:none}
+  nav.open ul li a.link{display:flex;align-items:center;justify-content:space-between;padding:19px 4px;font-family:var(--serif);font-size:1.55rem;font-weight:500;color:var(--wine);letter-spacing:0;text-transform:none}
+  nav.open ul li a.link::after{content:"›";position:static;width:auto;height:auto;background:none;color:var(--rose-gold);font-size:1.5rem;font-family:var(--sans)}
+  nav.open ul li a.link:hover{color:var(--magenta)}
+  nav.open ul li .btn{display:block;text-align:center;margin-top:22px;padding:17px;font-size:.82rem}
+  nav.open .menu-foot{
+    display:flex;align-items:center;justify-content:space-between;gap:14px;
+    margin-top:auto;padding-top:22px;border-top:1px solid var(--blush-deep);position:relative;z-index:2;
+  }
+  nav.open .menu-foot .mf-call{display:inline-flex;align-items:center;gap:10px;font-size:1.05rem;font-weight:500;color:var(--wine)}
+  nav.open .menu-foot .mf-call svg{width:18px;height:18px;color:var(--magenta)}
+  nav.open .menu-foot .mf-soc{display:flex;gap:10px}
+  nav.open .menu-foot .mf-soc a{width:44px;height:44px;border:1px solid var(--blush-deep);background:#fff;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:var(--wine);transition:.3s var(--ease);line-height:0}
+  nav.open .menu-foot .mf-soc a:active{transform:scale(.92)}
+  nav.open .menu-foot .mf-soc svg{width:19px;height:19px;display:block}
+  body.menu-open .burger{display:none}
   body.menu-open .mobile-cta{display:none}
-  .navmask{display:none;position:fixed;inset:0;background:rgba(43,23,33,.5);z-index:999;backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
-  .navmask.show{display:block}
+  .navmask{display:none}
   .sec{padding:84px 0}
   .price-list{columns:1}
   .loy-grid{grid-template-columns:1fr;gap:36px}
@@ -501,6 +530,18 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
       </span>
     </a>
     <nav id="navmenu">
+      <div class="menu-head">
+        <span class="brand">
+          <img class="mark" src="logo.png" alt="Pink Me Up" />
+          <span class="brand-text">
+            <span class="b2">Pink <em>me up</em></span>
+            <span class="b3">Vaš kutak za ljepotu</span>
+          </span>
+        </span>
+        <button class="menu-close" id="menuClose" aria-label="Zatvori izbornik">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
       <ul>
         <li><a class="link" href="#about">Salon</a></li>
         <li><a class="link" href="#signature">Po čemu smo posebni</a></li>
@@ -510,6 +551,16 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
         <li><a class="link" href="#contact">Kontakt</a></li>
         <li><a class="btn" href="https://pink-me-up.book.app/" target="_blank" rel="noopener noreferrer">Rezervirajte</a></li>
       </ul>
+      <div class="menu-foot">
+        <a class="mf-call" href="tel:+385953510325">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3l2 5-2 1c1 3 3 5 6 6l1-2 5 2v3c0 1-1 2-2 2C12 24 0 12 0 3c0-1 1-2 2-2"/></svg>
+          095 351 0325
+        </a>
+        <div class="mf-soc">
+          <a href="https://www.instagram.com/pink_me_up_salon/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/salonzanoktegrozdicajdoo" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.4 21v-7.5h2.5l.38-2.92H13.4V8.72c0-.84.24-1.42 1.45-1.42h1.53V4.7A20.6 20.6 0 0 0 14.13 4.6c-2.21 0-3.73 1.35-3.73 3.83v2.14H7.9v2.92h2.5V21z"/></svg></a>
+        </div>
+      </div>
     </nav>
     <button class="burger" id="burger" aria-label="Izbornik"><span></span><span></span><span></span></button>
   </div>
@@ -989,8 +1040,8 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
         </span>
         <p class="fdesc">Vaš kutak za ljepotu u Čavlima, nadomak Rijeke. Tretmani lica, ruska pedikura, depilacija i njega kojom zaslužujete da budete razmaženi.</p>
         <div class="foot-soc">
-          <a href="https://www.instagram.com/pink_me_up_salon/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-          <a href="https://www.facebook.com/salonzanoktegrozdicajdoo" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
+          <a href="https://www.instagram.com/pink_me_up_salon/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/salonzanoktegrozdicajdoo" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.4 21v-7.5h2.5l.38-2.92H13.4V8.72c0-.84.24-1.42 1.45-1.42h1.53V4.7A20.6 20.6 0 0 0 14.13 4.6c-2.21 0-3.73 1.35-3.73 3.83v2.14H7.9v2.92h2.5V21z"/></svg></a>
         </div>
       </div>
 
@@ -1040,6 +1091,7 @@ const mask=document.getElementById('navmask');
 const toggleMenu=(open)=>{menu.classList.toggle('open',open);mask.classList.toggle('show',open);burger.classList.toggle('x',open);document.body.classList.toggle('menu-open',open);document.body.style.overflow=open?'hidden':'';};
 burger.addEventListener('click',()=>toggleMenu(!menu.classList.contains('open')));
 mask.addEventListener('click',()=>toggleMenu(false));
+document.getElementById('menuClose').addEventListener('click',()=>toggleMenu(false));
 menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>toggleMenu(false)));
 
 /* service tabs */

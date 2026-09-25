@@ -309,9 +309,20 @@ section{position:relative}
 .price-row .pn{font-size:1rem;color:var(--ink);font-weight:300}
 .price-row .pn small{display:block;font-size:.8rem;color:var(--ink-soft);font-weight:300;letter-spacing:.01em}
 .price-row .leader{flex:1;border-bottom:1px dotted transparent}
-.price-row .pp{font-family:var(--serif);font-size:1.3rem;color:var(--magenta);font-weight:600;white-space:nowrap}
-.price-row.promo .pp{color:var(--gold)}
+.price-row .pp{display:flex;flex-direction:column;align-items:flex-end;text-align:right;white-space:nowrap}
+.price-row .pv{font-family:var(--serif);font-size:1.3rem;color:var(--magenta);font-weight:600;line-height:1.15}
+.price-row .sc{font-family:var(--sans);font-size:.74rem;font-weight:400;color:var(--ink-soft);letter-spacing:.02em;margin-top:3px;line-height:1.2}
+.price-row .sc b{font-weight:600;color:var(--ink)}
+.price-row.promo .pv{color:var(--gold)}
 .price-row.promo .pn{font-weight:400}
+.anchor-note{display:flex;gap:16px;align-items:flex-start;max-width:760px;margin:-26px auto 44px;padding:18px 22px;background:#fff;border:1px solid rgba(199,146,148,.28);border-left:3px solid var(--gold);border-radius:6px;box-shadow:var(--shadow-sm)}
+.anchor-note svg{width:22px;height:22px;flex:none;color:var(--gold);margin-top:2px}
+.anchor-note p{font-size:.92rem;color:var(--ink-soft);line-height:1.6;margin:0}
+.anchor-note p strong{color:var(--wine);font-weight:600}
+.anchor-note .links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:8px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.anchor-note .links a{color:var(--magenta);border-bottom:1px solid rgba(200,62,115,.3);padding-bottom:1px;transition:border-color .3s}
+.anchor-note .links a:hover{border-color:var(--magenta)}
+@media(max-width:760px){.anchor-note{margin:-30px 0 36px;padding:16px 18px}}
 .svc-note{margin-top:14px;font-size:.86rem;color:var(--ink-soft);font-style:italic}
 .pkg{display:inline-block;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;background:var(--blush);color:var(--magenta-deep);padding:3px 8px;border-radius:30px;margin-left:8px;vertical-align:middle;font-weight:500}
 
@@ -319,7 +330,7 @@ section{position:relative}
    TEAM
    ============================================================ */
 .team{background:linear-gradient(180deg,var(--blush),var(--paper))}
-.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:34px;max-width:820px;margin:0 auto}
 .member{background:#fff;border-radius:6px 6px 6px 70px;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .5s var(--ease),box-shadow .5s var(--ease);border:1px solid rgba(199,146,148,.16)}
 .member:hover{transform:translateY(-8px);box-shadow:var(--shadow-md)}
 .member .mtop{aspect-ratio:4/5;background:#efd9e0;position:relative;overflow:hidden}
@@ -632,7 +643,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
           <div class="big">6<small>Godina povjerenja</small></div>
           <hr/>
           <div class="about-stats">
-            <div><div class="n">3</div><div class="t">Stručnjakinje</div></div>
+            <div><div class="n">2</div><div class="t">Stručnjakinje</div></div>
             <div><div class="n">40+</div><div class="t">Usluga</div></div>
             <div><div class="n">100%</div><div class="t">Posvećenost</div></div>
           </div>
@@ -752,6 +763,14 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
       <p>Cijene istaknute u eurima (€). Cjenik na snazi od 01.11.2025. Za točan termin i preporuku tretmana, slobodno nas kontaktirajte.</p>
     </div>
 
+    <div class="anchor-note reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v14M5 12H3a9 9 0 0 0 18 0h-2M8 11h8"/></svg>
+      <div>
+        <p>Uz svaku cijenu istaknuta je i <strong>sidrena cijena</strong>, odnosno cijena usluge na dan <strong>10. 9. 2026.</strong>, sukladno Odluci Vlade RH o isticanju dodatne cijene (NN 101/2026).</p>
+        <div class="links"><a href="cjenici/kozmeticki-salon_zezelovo-selo-3-51219-cavle_P1_1_2026-09-25_1200.csv">Cjenik CSV</a><a href="cjenici/kozmeticki-salon_zezelovo-selo-3-51219-cavle_P1_1_2026-09-25_1200.xml">Cjenik XML</a><a href="cjenici/">Svi objavljeni cjenici</a></div>
+      </div>
+    </div>
+
     <!-- Tabs -->
     <div class="svc-tabs reveal" id="svcTabs">
       <button class="svc-tab active" data-tab="lice">Tretmani lica</button>
@@ -771,28 +790,17 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
           <span class="sm">Skeyndor profesionalna kozmetika</span>
         </div>
         <div class="price-list">
-          <div class="price-row"><span class="pn">Čišćenje lica<small>peeling, maska, masaža, UTZ špatula</small></span><span class="leader"></span><span class="pp">35 €</span></div>
-          <div class="price-row"><span class="pn">Tretman dubinske hidratacije<small>za suhu i osjetljivu kožu · Skeyndor Aquatherm</small></span><span class="leader"></span><span class="pp">40 €</span></div>
-          <div class="price-row"><span class="pn">Mikrodermoabrazija</span><span class="leader"></span><span class="pp">35 €</span></div>
-          <div class="price-row"><span class="pn">Tretman mimičkih bora<small>Skeyndor Corrective</small></span><span class="leader"></span><span class="pp">50 €</span></div>
-          <div class="price-row"><span class="pn">Tretman za opskrbu kože kisikom<small>Skeyndor Power Oxygen</small></span><span class="leader"></span><span class="pp">37 €</span></div>
-          <div class="price-row"><span class="pn">Face-lite tretman<small>obnova kolagena i smanjenje pigmentacijskih mrlja</small></span><span class="leader"></span><span class="pp">10 €</span></div>
-          <div class="price-row promo"><span class="pn">Face-lite paket<span class="pkg">10 tretmana</span></span><span class="leader"></span><span class="pp">80 €</span></div>
-          <div class="price-row promo"><span class="pn">Čišćenje lica, paket<span class="pkg">5 + 1 gratis</span></span><span class="leader"></span><span class="pp">140 €</span></div>
-          <div class="price-row"><span class="pn">Eye Perfection<small>tretman za umorne oči + presoterapija</small></span><span class="leader"></span><span class="pp">30 €</span></div>
+          <div class="price-row"><span class="pn">Čišćenje lica<small>peeling, maska, masaža, UTZ špatula</small></span><span class="leader"></span><span class="pp"><span class="pv">35 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>35 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Tretman dubinske hidratacije<small>za suhu i osjetljivu kožu · Skeyndor Aquatherm</small></span><span class="leader"></span><span class="pp"><span class="pv">40 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>40 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Mikrodermoabrazija</span><span class="leader"></span><span class="pp"><span class="pv">35 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>35 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Tretman mimičkih bora<small>Skeyndor Corrective</small></span><span class="leader"></span><span class="pp"><span class="pv">50 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>50 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Tretman za opskrbu kože kisikom<small>Skeyndor Power Oxygen</small></span><span class="leader"></span><span class="pp"><span class="pv">37 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>37 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Face-lite tretman<small>obnova kolagena i smanjenje pigmentacijskih mrlja</small></span><span class="leader"></span><span class="pp"><span class="pv">10 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>10 €</b></span></span></div>
+          <div class="price-row promo"><span class="pn">Face-lite paket<span class="pkg">10 tretmana</span></span><span class="leader"></span><span class="pp"><span class="pv">80 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>80 €</b></span></span></div>
+          <div class="price-row promo"><span class="pn">Čišćenje lica, paket<span class="pkg">5 + 1 gratis</span></span><span class="leader"></span><span class="pp"><span class="pv">140 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>140 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Eye Perfection<small>tretman za umorne oči + presoterapija</small></span><span class="leader"></span><span class="pp"><span class="pv">30 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>30 €</b></span></span></div>
         </div>
         <p class="svc-note">Svaki tretman lica započinje analizom kože i preporukom najprikladnijeg postupka za vaš tip kože.</p>
-      </div>
-
-      <div class="svc-block">
-        <div class="svc-block-head">
-          <span class="si"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 18c8-8 16-8 24 0M14 16l-2 6M26 16l2 6M20 15v8"/></svg></span>
-          <h3>Šminkanje</h3>
-        </div>
-        <div class="price-list">
-          <div class="price-row"><span class="pn">Šminkanje: dnevni look</span><span class="leader"></span><span class="pp">30 €</span></div>
-          <div class="price-row"><span class="pn">Šminkanje: glam look</span><span class="leader"></span><span class="pp">35 €</span></div>
-        </div>
       </div>
     </div>
 
@@ -805,27 +813,27 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
           <span class="sm">Manikura · gel · trajni lak</span>
         </div>
         <div class="price-list">
-          <div class="price-row"><span class="pn">Manikura</span><span class="leader"></span><span class="pp">10 €</span></div>
-          <div class="price-row"><span class="pn">Manikura + lak</span><span class="leader"></span><span class="pp">13 €</span></div>
-          <div class="price-row"><span class="pn">Manikura + parafin</span><span class="leader"></span><span class="pp">18 €</span></div>
-          <div class="price-row"><span class="pn">Trajni lak s manikurom</span><span class="leader"></span><span class="pp">25 €</span></div>
-          <div class="price-row"><span class="pn">Trajni lak s jačom bazom<small>beton gel</small></span><span class="leader"></span><span class="pp">30 €</span></div>
-          <div class="price-row"><span class="pn">Trajni lak s produžavanjem<small>do 3 nokta</small></span><span class="leader"></span><span class="pp">28 €</span></div>
-          <div class="price-row"><span class="pn">Gel ugradnja na prirodne nokte</span><span class="leader"></span><span class="pp">35 €</span></div>
-          <div class="price-row"><span class="pn">Gel ugradnja: medium<small>šablone</small></span><span class="leader"></span><span class="pp">40 €</span></div>
-          <div class="price-row"><span class="pn">Gel ugradnja: large<small>šablone</small></span><span class="leader"></span><span class="pp">43 €</span></div>
-          <div class="price-row"><span class="pn">Gel ugradnja: XXXL<small>šablone</small></span><span class="leader"></span><span class="pp">50 €</span></div>
-          <div class="price-row"><span class="pn">Gel korekcija: medium<small>popust do 4 nokta</small></span><span class="leader"></span><span class="pp">35 €</span></div>
-          <div class="price-row"><span class="pn">Gel korekcija: large</span><span class="leader"></span><span class="pp">38 €</span></div>
-          <div class="price-row"><span class="pn">Gel korekcija: XXXL</span><span class="leader"></span><span class="pp">44 €</span></div>
-          <div class="price-row"><span class="pn">Skidanje trajnog laka</span><span class="leader"></span><span class="pp">12 €</span></div>
-          <div class="price-row"><span class="pn">Skidanje gela</span><span class="leader"></span><span class="pp">15 €</span></div>
-          <div class="price-row"><span class="pn">Popravak do 2 nokta (trajni lak)</span><span class="leader"></span><span class="pp">5 €</span></div>
-          <div class="price-row"><span class="pn">Popravak 1–2 nokta (gel)</span><span class="leader"></span><span class="pp">7 €</span></div>
-          <div class="price-row"><span class="pn">Nail art, zahtjevniji<small>1 nokat</small></span><span class="leader"></span><span class="pp">3 €</span></div>
-          <div class="price-row"><span class="pn">Baby boomer / French / Chrome / Cat eye<small>10 noktiju</small></span><span class="leader"></span><span class="pp">10 €</span></div>
-          <div class="price-row"><span class="pn">Parafinska kupka ruke</span><span class="leader"></span><span class="pp">7 €</span></div>
-          <div class="price-row promo"><span class="pn">Hand Spa Ritual<small>peeling + parafin + masaža</small></span><span class="leader"></span><span class="pp">10 €</span></div>
+          <div class="price-row"><span class="pn">Manikura</span><span class="leader"></span><span class="pp"><span class="pv">10 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>10 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Manikura + lak</span><span class="leader"></span><span class="pp"><span class="pv">13 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>13 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Manikura + parafin</span><span class="leader"></span><span class="pp"><span class="pv">18 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>18 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Trajni lak s manikurom</span><span class="leader"></span><span class="pp"><span class="pv">25 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>25 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Trajni lak s jačom bazom<small>beton gel</small></span><span class="leader"></span><span class="pp"><span class="pv">30 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>30 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Trajni lak s produžavanjem<small>do 3 nokta</small></span><span class="leader"></span><span class="pp"><span class="pv">28 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>28 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Gel ugradnja na prirodne nokte</span><span class="leader"></span><span class="pp"><span class="pv">35 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>35 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Gel ugradnja: medium<small>šablone</small></span><span class="leader"></span><span class="pp"><span class="pv">40 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>40 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Gel ugradnja: large<small>šablone</small></span><span class="leader"></span><span class="pp"><span class="pv">43 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>43 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Gel ugradnja: XXXL<small>šablone</small></span><span class="leader"></span><span class="pp"><span class="pv">50 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>50 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Gel korekcija: medium<small>popravak do 4 nokta</small></span><span class="leader"></span><span class="pp"><span class="pv">35 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>35 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Gel korekcija: large</span><span class="leader"></span><span class="pp"><span class="pv">38 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>38 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Gel korekcija: XXXL</span><span class="leader"></span><span class="pp"><span class="pv">44 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>44 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Skidanje trajnog laka</span><span class="leader"></span><span class="pp"><span class="pv">12 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>12 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Skidanje gela</span><span class="leader"></span><span class="pp"><span class="pv">15 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>15 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Popravak do 2 nokta (trajni lak)</span><span class="leader"></span><span class="pp"><span class="pv">5 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>5 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Popravak 1–2 nokta (gel)</span><span class="leader"></span><span class="pp"><span class="pv">7 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>7 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Nail art, zahtjevniji<small>1 nokat</small></span><span class="leader"></span><span class="pp"><span class="pv">3 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>3 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Baby boomer / French / Chrome / Cat eye<small>10 noktiju</small></span><span class="leader"></span><span class="pp"><span class="pv">10 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>10 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Parafinska kupka ruke</span><span class="leader"></span><span class="pp"><span class="pv">7 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>7 €</b></span></span></div>
+          <div class="price-row promo"><span class="pn">Hand Spa Ritual<small>peeling + parafin + masaža</small></span><span class="leader"></span><span class="pp"><span class="pv">10 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>10 €</b></span></span></div>
         </div>
       </div>
     </div>
@@ -839,18 +847,18 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
           <span class="sm">Ruska &amp; estetska pedikura</span>
         </div>
         <div class="price-list">
-          <div class="price-row promo"><span class="pn"><strong>Ruska pedikura</strong><small>suha tehnika · naša specijalnost</small></span><span class="leader"></span><span class="pp">30 €</span></div>
-          <div class="price-row"><span class="pn">Estetska njega stopala</span><span class="leader"></span><span class="pp">21 €</span></div>
-          <div class="price-row"><span class="pn">Estetska njega stopala + lak</span><span class="leader"></span><span class="pp">24 €</span></div>
-          <div class="price-row"><span class="pn">Estetska njega stopala + trajni lak</span><span class="leader"></span><span class="pp">35 €</span></div>
-          <div class="price-row"><span class="pn">Trajni lak: noge</span><span class="leader"></span><span class="pp">22 €</span></div>
-          <div class="price-row"><span class="pn">Trajni lak: ruke i noge</span><span class="leader"></span><span class="pp">42 €</span></div>
-          <div class="price-row"><span class="pn">Trajni lak ruke + noge<small>uz estetsku njegu stopala</small></span><span class="leader"></span><span class="pp">54 €</span></div>
-          <div class="price-row"><span class="pn">Parafinska kupka: noge</span><span class="leader"></span><span class="pp">9 €</span></div>
-          <div class="price-row"><span class="pn">Estetska njega + parafin</span><span class="leader"></span><span class="pp">29 €</span></div>
-          <div class="price-row"><span class="pn">Estetska njega + parafin + lak</span><span class="leader"></span><span class="pp">30 €</span></div>
-          <div class="price-row"><span class="pn">Estetska njega + parafin + trajni lak</span><span class="leader"></span><span class="pp">42 €</span></div>
-          <div class="price-row"><span class="pn">Dogradnja nokta: noge</span><span class="leader"></span><span class="pp">4 €</span></div>
+          <div class="price-row promo"><span class="pn"><strong>Ruska pedikura</strong><small>suha tehnika · naša specijalnost</small></span><span class="leader"></span><span class="pp"><span class="pv">30 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>30 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Estetska njega stopala</span><span class="leader"></span><span class="pp"><span class="pv">21 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>21 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Estetska njega stopala + lak</span><span class="leader"></span><span class="pp"><span class="pv">24 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>24 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Estetska njega stopala + trajni lak</span><span class="leader"></span><span class="pp"><span class="pv">35 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>35 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Trajni lak: noge</span><span class="leader"></span><span class="pp"><span class="pv">22 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>22 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Trajni lak: ruke i noge</span><span class="leader"></span><span class="pp"><span class="pv">42 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>42 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Trajni lak ruke + noge<small>uz estetsku njegu stopala</small></span><span class="leader"></span><span class="pp"><span class="pv">54 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>54 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Parafinska kupka: noge</span><span class="leader"></span><span class="pp"><span class="pv">9 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>9 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Estetska njega + parafin</span><span class="leader"></span><span class="pp"><span class="pv">29 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>29 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Estetska njega + parafin + lak</span><span class="leader"></span><span class="pp"><span class="pv">30 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>30 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Estetska njega + parafin + trajni lak</span><span class="leader"></span><span class="pp"><span class="pv">42 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>42 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Dogradnja nokta: noge</span><span class="leader"></span><span class="pp"><span class="pv">4 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>4 €</b></span></span></div>
         </div>
       </div>
     </div>
@@ -864,25 +872,25 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
           <span class="sm">Premium australski vosak</span>
         </div>
         <div class="price-list">
-          <div class="price-row"><span class="pn">Bikini Basic</span><span class="leader"></span><span class="pp">15 €</span></div>
-          <div class="price-row"><span class="pn">Bikini California</span><span class="leader"></span><span class="pp">20 €</span></div>
-          <div class="price-row"><span class="pn">Bikini Hollywood</span><span class="leader"></span><span class="pp">30 €</span></div>
-          <div class="price-row"><span class="pn">Nadusnice</span><span class="leader"></span><span class="pp">13 €</span></div>
-          <div class="price-row"><span class="pn">Nadusnice i brada</span><span class="leader"></span><span class="pp">20 €</span></div>
-          <div class="price-row"><span class="pn">Lice</span><span class="leader"></span><span class="pp">22 €</span></div>
-          <div class="price-row"><span class="pn">Pazusi</span><span class="leader"></span><span class="pp">20 €</span></div>
-          <div class="price-row"><span class="pn">Cijele ruke</span><span class="leader"></span><span class="pp">18 €</span></div>
-          <div class="price-row"><span class="pn">Podkoljenice ili nadkoljenice</span><span class="leader"></span><span class="pp">23 €</span></div>
-          <div class="price-row"><span class="pn">Podkoljenice/nadkoljenice + Basic</span><span class="leader"></span><span class="pp">29 €</span></div>
-          <div class="price-row"><span class="pn">Podkoljenice/nadkoljenice + California</span><span class="leader"></span><span class="pp">32 €</span></div>
-          <div class="price-row"><span class="pn">Podkoljenice/nadkoljenice + Hollywood</span><span class="leader"></span><span class="pp">40 €</span></div>
-          <div class="price-row"><span class="pn">Cijele noge</span><span class="leader"></span><span class="pp">30 €</span></div>
-          <div class="price-row"><span class="pn">Cijele noge + Basic</span><span class="leader"></span><span class="pp">38 €</span></div>
-          <div class="price-row"><span class="pn">Cijele noge + California</span><span class="leader"></span><span class="pp">40 €</span></div>
-          <div class="price-row"><span class="pn">Cijele noge + Hollywood</span><span class="leader"></span><span class="pp">50 €</span></div>
-          <div class="price-row"><span class="pn">Prsa i trbuh</span><span class="leader"></span><span class="pp">35 €</span></div>
-          <div class="price-row"><span class="pn">Leđa: parcijalno</span><span class="leader"></span><span class="pp">40 €</span></div>
-          <div class="price-row"><span class="pn">Leđa: cijela</span><span class="leader"></span><span class="pp">72 €</span></div>
+          <div class="price-row"><span class="pn">Bikini Basic</span><span class="leader"></span><span class="pp"><span class="pv">15 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>15 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Bikini California</span><span class="leader"></span><span class="pp"><span class="pv">20 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>20 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Bikini Hollywood</span><span class="leader"></span><span class="pp"><span class="pv">30 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>30 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Nadusnice</span><span class="leader"></span><span class="pp"><span class="pv">13 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>13 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Nadusnice i brada</span><span class="leader"></span><span class="pp"><span class="pv">20 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>20 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Lice</span><span class="leader"></span><span class="pp"><span class="pv">22 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>22 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Pazusi</span><span class="leader"></span><span class="pp"><span class="pv">20 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>20 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Cijele ruke</span><span class="leader"></span><span class="pp"><span class="pv">18 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>18 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Podkoljenice ili nadkoljenice</span><span class="leader"></span><span class="pp"><span class="pv">23 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>23 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Podkoljenice/nadkoljenice + Basic</span><span class="leader"></span><span class="pp"><span class="pv">29 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>29 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Podkoljenice/nadkoljenice + California</span><span class="leader"></span><span class="pp"><span class="pv">32 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>32 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Podkoljenice/nadkoljenice + Hollywood</span><span class="leader"></span><span class="pp"><span class="pv">40 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>40 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Cijele noge</span><span class="leader"></span><span class="pp"><span class="pv">30 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>30 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Cijele noge + Basic</span><span class="leader"></span><span class="pp"><span class="pv">38 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>38 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Cijele noge + California</span><span class="leader"></span><span class="pp"><span class="pv">40 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>40 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Cijele noge + Hollywood</span><span class="leader"></span><span class="pp"><span class="pv">50 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>50 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Prsa i trbuh</span><span class="leader"></span><span class="pp"><span class="pv">35 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>35 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Leđa: parcijalno</span><span class="leader"></span><span class="pp"><span class="pv">40 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>40 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Leđa: cijela</span><span class="leader"></span><span class="pp"><span class="pv">72 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>72 €</b></span></span></div>
         </div>
       </div>
     </div>
@@ -895,9 +903,9 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
           <h3>Tretmani tijela &amp; masaže</h3>
         </div>
         <div class="price-list">
-          <div class="price-row"><span class="pn">Masaža: pola sata<small>leđa</small></span><span class="leader"></span><span class="pp">15 €</span></div>
-          <div class="price-row"><span class="pn">Masaža: sat vremena<small>cijelo tijelo</small></span><span class="leader"></span><span class="pp">30 €</span></div>
-          <div class="price-row promo"><span class="pn">Parcijalna masaža<span class="pkg">Promo · 5 tretmana</span></span><span class="leader"></span><span class="pp">60 €</span></div>
+          <div class="price-row"><span class="pn">Masaža: pola sata<small>leđa</small></span><span class="leader"></span><span class="pp"><span class="pv">15 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>15 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Masaža: sat vremena<small>cijelo tijelo</small></span><span class="leader"></span><span class="pp"><span class="pv">30 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>30 €</b></span></span></div>
+          <div class="price-row promo"><span class="pn">Parcijalna masaža, paket<span class="pkg">5 tretmana</span></span><span class="leader"></span><span class="pp"><span class="pv">60 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>60 €</b></span></span></div>
         </div>
         <p class="svc-note">Idealan ritual opuštanja nakon napornog tjedna, sami ili u kombinaciji s tretmanom lica.</p>
       </div>
@@ -911,11 +919,11 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
           <h3>Obrve &amp; trepavice</h3>
         </div>
         <div class="price-list">
-          <div class="price-row"><span class="pn">Čupanje obrva</span><span class="leader"></span><span class="pp">8 €</span></div>
-          <div class="price-row"><span class="pn">Bojanje obrva</span><span class="leader"></span><span class="pp">10 €</span></div>
-          <div class="price-row"><span class="pn">Brow lift<small>podizanje obrva</small></span><span class="leader"></span><span class="pp">27 €</span></div>
-          <div class="price-row"><span class="pn">Lash lift<small>podizanje trepavica</small></span><span class="leader"></span><span class="pp">33 €</span></div>
-          <div class="price-row promo"><span class="pn">Lash &amp; Brow lift<small>kombinacija · najtraženije</small></span><span class="leader"></span><span class="pp">50 €</span></div>
+          <div class="price-row"><span class="pn">Čupanje obrva</span><span class="leader"></span><span class="pp"><span class="pv">8 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>8 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Bojanje obrva</span><span class="leader"></span><span class="pp"><span class="pv">10 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>10 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Brow lift<small>podizanje obrva</small></span><span class="leader"></span><span class="pp"><span class="pv">27 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>27 €</b></span></span></div>
+          <div class="price-row"><span class="pn">Lash lift<small>podizanje trepavica</small></span><span class="leader"></span><span class="pp"><span class="pv">33 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>33 €</b></span></span></div>
+          <div class="price-row promo"><span class="pn">Lash &amp; Brow lift<small>kombinacija · najtraženije</small></span><span class="leader"></span><span class="pp"><span class="pv">50 €</span><span class="sc" title="Sidrena cijena: cijena usluge na dan 10. 9. 2026.">sidrena cijena <b>50 €</b></span></span></div>
         </div>
       </div>
     </div>
@@ -929,7 +937,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
     <div class="sec-head center reveal">
       <span class="eyebrow">Naš tim</span>
       <h2>Ruke kojima vjerujete</h2>
-      <p>Tri stručnjakinje, jedna zajednička posvećenost: vaše zadovoljstvo i ljepota koja se osjeti.</p>
+      <p>Dvije stručnjakinje, jedna zajednička posvećenost: vaše zadovoljstvo i ljepota koja se osjeti.</p>
     </div>
     <div class="team-grid">
       <div class="member owner reveal d1">
@@ -948,15 +956,6 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
           <div class="role">Kozmetičarka</div>
           <div class="since">U timu od 04 / 2025.</div>
           <div class="spec"><span>Manikura</span><span>Pedikura</span><span>Depilacija</span><span>Masaže</span></div>
-        </div>
-      </div>
-      <div class="member reveal d3">
-        <div class="mtop"><img class="photo" src="laura.jpg" alt="Laura Banko, kozmetičarka" loading="lazy" /></div>
-        <div class="mbody">
-          <h3>Laura Banko</h3>
-          <div class="role">Kozmetičarka i vizažistica</div>
-          <div class="since">Završena kozmetička škola · 4 godine prakse · zaposlena 09 / 2025.</div>
-          <div class="spec"><span>Manikura</span><span>Pedikura</span><span>Depilacija</span><span>Profesionalno šminkanje</span></div>
         </div>
       </div>
     </div>
@@ -1057,6 +1056,7 @@ footer .fdesc{color:#cdaab9;font-size:.98rem;margin:20px 0 24px;max-width:320px}
         <p style="color:#cdaab9;margin-bottom:18px">Termin rezervirajte online u nekoliko sekundi, bilo kada i s bilo kojeg uređaja.</p>
         <a href="https://pink-me-up.book.app/" target="_blank" rel="noopener noreferrer" class="btn" style="margin-bottom:18px">Rezervirajte online</a>
         <p><a href="#services">Pogledajte cjenik →</a></p>
+        <p><a href="cjenici/">Strojno čitljivi cjenici (CSV, XML) →</a></p>
       </div>
     </div>
     <div class="foot-bottom">

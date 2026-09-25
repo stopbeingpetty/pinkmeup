@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cjenik_usluga>
+  <pruzatelj_usluge>
+    <naziv>GROŽĐICA j.d.o.o.</naziv>
+    <oib>32912339025</oib>
+    <naziv_salona>Beauty Salon Pink Me Up</naziv_salona>
+  </pruzatelj_usluge>
+  <prodajni_objekt>
+    <oblik>Kozmetički salon</oblik>
+    <adresa>Žeželovo Selo 3, 51219 Čavle</adresa>
+    <oznaka>P1</oznaka>
+  </prodajni_objekt>
+  <broj_pohrane>1</broj_pohrane>
+  <vrijeme_objave>2026-09-25T12:00:00+02:00</vrijeme_objave>
+  <datum_sidrene_cijene>2026-09-10</datum_sidrene_cijene>
+  <valuta>EUR</valuta>
+  <usluge>
+    <usluga>
+      <naziv_usluge>Čišćenje lica (peeling, maska, masaža, UTZ špatula)</naziv_usluge>
+      <kategorija>Tretmani lica</kategorija>
+      <maloprodajna_cijena>35.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>35.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Tretman dubinske hidratacije (za suhu i osjetljivu kožu, Skeyndor Aquatherm)</naziv_usluge>
+      <kategorija>Tretmani lica</kategorija>
+      <maloprodajna_cijena>40.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>40.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Mikrodermoabrazija</naziv_usluge>
+      <kategorija>Tretmani lica</kategorija>
+      <maloprodajna_cijena>35.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>35.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Tretman mimičkih bora (Skeyndor Corrective)</naziv_usluge>
+      <kategorija>Tretmani lica</kategorija>
+      <maloprodajna_cijena>50.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>50.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Tretman za opskrbu kože kisikom (Skeyndor Power Oxygen)</naziv_usluge>
+      <kategorija>Tretmani lica</kategorija>
+      <maloprodajna_cijena>37.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>37.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Face-lite tretman (obnova kolagena i smanjenje pigmentacijskih mrlja)</naziv_usluge>
+      <kategorija>Tretmani lica</kategorija>
+      <maloprodajna_cijena>10.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>10.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Face-lite paket (10 tretmana)</naziv_usluge>
+      <kategorija>Tretmani lica</kategorija>
+      <maloprodajna_cijena>80.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>80.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Čišćenje lica, paket (5 + 1 gratis)</naziv_usluge>
+      <kategorija>Tretmani lica</kategorija>
+      <maloprodajna_cijena>140.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>140.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Eye Perfection (tretman za umorne oči + presoterapija)</naziv_usluge>
+      <kategorija>Tretmani lica</kategorija>
+      <maloprodajna_cijena>30.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>30.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Manikura</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>10.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>10.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Manikura + lak</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>13.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>13.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Manikura + parafin</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>18.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>18.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Trajni lak s manikurom</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>25.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>25.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Trajni lak s jačom bazom (beton gel)</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>30.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>30.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Trajni lak s produžavanjem (do 3 nokta)</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>28.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>28.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Gel ugradnja na prirodne nokte</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>35.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>35.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Gel ugradnja: medium (šablone)</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>40.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>40.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Gel ugradnja: large (šablone)</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>43.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>43.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Gel ugradnja: XXXL (šablone)</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>50.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>50.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Gel korekcija: medium (popravak do 4 nokta)</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>35.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>35.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Gel korekcija: large</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>38.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>38.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Gel korekcija: XXXL</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>44.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>44.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Skidanje trajnog laka</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>12.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>12.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Skidanje gela</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>15.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>15.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Popravak do 2 nokta (trajni lak)</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>5.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>5.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Popravak 1–2 nokta (gel)</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>7.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>7.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Nail art, zahtjevniji (1 nokat)</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>3.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>3.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Baby boomer / French / Chrome / Cat eye (10 noktiju)</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>10.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>10.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Parafinska kupka ruke</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>7.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>7.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Hand Spa Ritual (peeling + parafin + masaža)</naziv_usluge>
+      <kategorija>Njega ruku i nokti</kategorija>
+      <maloprodajna_cijena>10.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>10.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Ruska pedikura (suha tehnika)</naziv_usluge>
+      <kategorija>Njega stopala</kategorija>
+      <maloprodajna_cijena>30.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>30.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Estetska njega stopala</naziv_usluge>
+      <kategorija>Njega stopala</kategorija>
+      <maloprodajna_cijena>21.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>21.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Estetska njega stopala + lak</naziv_usluge>
+      <kategorija>Njega stopala</kategorija>
+      <maloprodajna_cijena>24.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>24.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Estetska njega stopala + trajni lak</naziv_usluge>
+      <kategorija>Njega stopala</kategorija>
+      <maloprodajna_cijena>35.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>35.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Trajni lak: noge</naziv_usluge>
+      <kategorija>Njega stopala</kategorija>
+      <maloprodajna_cijena>22.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>22.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Trajni lak: ruke i noge</naziv_usluge>
+      <kategorija>Njega stopala</kategorija>
+      <maloprodajna_cijena>42.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>42.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Trajni lak ruke + noge (uz estetsku njegu stopala)</naziv_usluge>
+      <kategorija>Njega stopala</kategorija>
+      <maloprodajna_cijena>54.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>54.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Parafinska kupka: noge</naziv_usluge>
+      <kategorija>Njega stopala</kategorija>
+      <maloprodajna_cijena>9.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>9.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Estetska njega + parafin</naziv_usluge>
+      <kategorija>Njega stopala</kategorija>
+      <maloprodajna_cijena>29.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>29.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Estetska njega + parafin + lak</naziv_usluge>
+      <kategorija>Njega stopala</kategorija>
+      <maloprodajna_cijena>30.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>30.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Estetska njega + parafin + trajni lak</naziv_usluge>
+      <kategorija>Njega stopala</kategorija>
+      <maloprodajna_cijena>42.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>42.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Dogradnja nokta: noge</naziv_usluge>
+      <kategorija>Njega stopala</kategorija>
+      <maloprodajna_cijena>4.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>4.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Bikini Basic</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>15.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>15.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Bikini California</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>20.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>20.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Bikini Hollywood</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>30.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>30.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Nadusnice</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>13.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>13.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Nadusnice i brada</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>20.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>20.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Lice</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>22.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>22.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Pazusi</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>20.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>20.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Cijele ruke</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>18.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>18.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Podkoljenice ili nadkoljenice</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>23.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>23.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Podkoljenice/nadkoljenice + Basic</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>29.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>29.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Podkoljenice/nadkoljenice + California</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>32.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>32.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Podkoljenice/nadkoljenice + Hollywood</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>40.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>40.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Cijele noge</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>30.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>30.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Cijele noge + Basic</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>38.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>38.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Cijele noge + California</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>40.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>40.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Cijele noge + Hollywood</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>50.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>50.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Prsa i trbuh</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>35.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>35.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Leđa: parcijalno</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>40.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>40.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Leđa: cijela</naziv_usluge>
+      <kategorija>Lycon depilacija</kategorija>
+      <maloprodajna_cijena>72.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>72.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Masaža: pola sata (leđa)</naziv_usluge>
+      <kategorija>Tretmani tijela i masaže</kategorija>
+      <maloprodajna_cijena>15.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>15.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Masaža: sat vremena (cijelo tijelo)</naziv_usluge>
+      <kategorija>Tretmani tijela i masaže</kategorija>
+      <maloprodajna_cijena>30.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>30.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Parcijalna masaža, paket (5 tretmana)</naziv_usluge>
+      <kategorija>Tretmani tijela i masaže</kategorija>
+      <maloprodajna_cijena>60.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>60.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Čupanje obrva</naziv_usluge>
+      <kategorija>Obrve i trepavice</kategorija>
+      <maloprodajna_cijena>8.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>8.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Bojanje obrva</naziv_usluge>
+      <kategorija>Obrve i trepavice</kategorija>
+      <maloprodajna_cijena>10.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>10.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Brow lift (podizanje obrva)</naziv_usluge>
+      <kategorija>Obrve i trepavice</kategorija>
+      <maloprodajna_cijena>27.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>27.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Lash lift (podizanje trepavica)</naziv_usluge>
+      <kategorija>Obrve i trepavice</kategorija>
+      <maloprodajna_cijena>33.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>33.00</sidrena_cijena>
+    </usluga>
+    <usluga>
+      <naziv_usluge>Lash &amp; Brow lift</naziv_usluge>
+      <kategorija>Obrve i trepavice</kategorija>
+      <maloprodajna_cijena>50.00</maloprodajna_cijena>
+      <poseban_oblik_prodaje>NE</poseban_oblik_prodaje>
+      <naziv_posebnog_oblika_prodaje />
+      <sidrena_cijena>50.00</sidrena_cijena>
+    </usluga>
+  </usluge>
+</cjenik_usluga>

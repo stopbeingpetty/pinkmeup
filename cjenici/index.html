@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cjenici usluga · Pink Me Up · Beauty Salon</title>
+<meta name="description" content="Strojno čitljivi cjenici usluga Beauty Salona Pink Me Up (CSV i XML) sa sidrenim cijenama, sukladno Odluci Vlade RH (NN 101/2026)." />
+<link rel="icon" type="image/png" href="../logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --ink:#3a212e;--ink-soft:#6b4d5a;--paper:#fdf6f3;--blush:#fce7ee;--blush-deep:#f7d4df;
+  --magenta:#c83e73;--magenta-deep:#9b2a56;--wine:#6e1f43;--gold:#c6a15b;--gold-soft:#e3cf9f;--rose-gold:#c79294;
+  --shadow-sm:0 4px 20px rgba(110,31,67,.07);--shadow-md:0 18px 50px rgba(110,31,67,.12);
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost',-apple-system,sans-serif;--script:'Pinyon Script',cursive;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased}
+body{font-family:var(--sans);color:var(--ink);font-weight:300;line-height:1.65;overflow-x:hidden;
+  background:radial-gradient(60% 50% at 85% 0%,rgba(200,62,115,.10),transparent 60%),radial-gradient(50% 40% at 0% 100%,rgba(231,138,166,.14),transparent 60%),var(--paper);min-height:100vh}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--magenta);color:#fff}
+.wrap{max-width:920px;margin:0 auto;padding:0 32px}
+
+header{padding:26px 0;border-bottom:1px solid var(--blush-deep)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:46px;height:46px;object-fit:contain}
+.brand .b1{display:block;font-weight:500;font-size:.6rem;letter-spacing:.34em;text-transform:uppercase;color:var(--ink-soft);line-height:1}
+.brand .b2{display:block;font-family:var(--serif);font-weight:600;font-size:1.35rem;color:var(--wine);line-height:1.1}
+.brand .b2 em{font-family:var(--script);font-style:normal;color:var(--magenta);font-size:1.5rem}
+.back{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--magenta);border:1px solid rgba(200,62,115,.35);padding:11px 20px;border-radius:40px;transition:all .35s var(--ease);white-space:nowrap}
+.back:hover{background:var(--magenta);color:#fff;border-color:var(--magenta)}
+
+main{padding:72px 0 96px}
+.eyebrow{font-weight:500;font-size:.72rem;letter-spacing:.42em;text-transform:uppercase;color:var(--magenta)}
+h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.4rem,6vw,3.6rem);color:var(--wine);line-height:1.05;margin:14px 0 20px}
+.lead{font-size:1.06rem;color:var(--ink-soft);max-width:680px}
+
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin:44px 0 52px;background:#fff;border:1px solid rgba(199,146,148,.22);border-radius:8px;box-shadow:var(--shadow-sm);overflow:hidden}
+.fact{padding:20px 24px;border-bottom:1px solid var(--blush);border-right:1px solid var(--blush)}
+.fact:nth-child(2n){border-right:none}
+.fact:nth-last-child(-n+2){border-bottom:none}
+.fact .k{display:block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:4px}
+.fact .v{font-size:1rem;color:var(--ink);font-weight:400}
+
+h2{font-family:var(--serif);font-weight:500;font-size:2rem;color:var(--wine);margin-bottom:18px}
+.list{background:#fff;border:1px solid rgba(199,146,148,.22);border-radius:8px;box-shadow:var(--shadow-sm);overflow:hidden}
+.row{display:grid;grid-template-columns:1.2fr .7fr 1.4fr;align-items:center;gap:16px;padding:20px 24px;border-bottom:1px solid var(--blush)}
+.row:last-child{border-bottom:none}
+.row.head{background:var(--blush);padding:12px 24px;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--magenta-deep);font-weight:600}
+.row .date{font-family:var(--serif);font-size:1.25rem;color:var(--wine);font-weight:600;line-height:1.2}
+.row .date small{display:block;font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta);margin-top:4px}
+.row .no{font-size:.95rem;color:var(--ink-soft)}
+.files{display:flex;flex-wrap:wrap;gap:10px}
+.file{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;padding:10px 16px;border-radius:40px;background:var(--magenta);color:#fff;transition:all .35s var(--ease)}
+.file.alt{background:#fff;color:var(--magenta);border:1px solid rgba(200,62,115,.35)}
+.file:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(200,62,115,.25)}
+.file svg{width:15px;height:15px}
+.fname{grid-column:1/-1;font-size:.74rem;color:var(--ink-soft);word-break:break-all;margin-top:-6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+
+.note{margin-top:28px;font-size:.9rem;color:var(--ink-soft);line-height:1.7}
+.note strong{color:var(--wine);font-weight:600}
+
+footer{border-top:1px solid var(--blush-deep);padding:26px 0;font-size:.8rem;color:var(--ink-soft)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+@media(max-width:700px){
+  .wrap{padding:0 18px}
+  header{padding:18px 0}
+  .brand .b1{display:none}
+  .back{padding:10px 14px;font-size:.66rem}
+  main{padding:48px 0 72px}
+  .facts{grid-template-columns:1fr}
+  .fact{border-right:none}
+  .fact:nth-last-child(2){border-bottom:1px solid var(--blush)}
+  .row{grid-template-columns:1fr;gap:10px;padding:18px}
+  .row.head{display:none}
+  .row .no::before{content:"Broj pohrane: "}
+  .fname{margin-top:0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="../">
+      <img src="../logo.png" alt="Pink Me Up · Beauty Salon" />
+      <span><span class="b1">Beauty Salon</span><span class="b2">Pink <em>me up</em></span></span>
+    </a>
+    <a class="back" href="../#services">Natrag na cjenik</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <span class="eyebrow">Objava cjenika</span>
+    <h1>Cjenici usluga</h1>
+    <p class="lead">Sukladno Odluci Vlade RH o objavi cjenika proizvoda i usluga (NN 101/2026) objavljujemo važeći cjenik usluga u strojno čitljivom obliku, u CSV i XML formatu. Uz svaku uslugu navedena je maloprodajna cijena i sidrena cijena, odnosno cijena usluge na dan 10. 9. 2026.</p>
+
+    <div class="facts">
+      <div class="fact"><span class="k">Pružatelj usluge</span><span class="v">GROŽĐICA j.d.o.o., OIB 32912339025</span></div>
+      <div class="fact"><span class="k">Prodajni objekt</span><span class="v">Kozmetički salon Pink Me Up</span></div>
+      <div class="fact"><span class="k">Adresa prodajnog objekta</span><span class="v">Žeželovo Selo 3, 51219 Čavle</span></div>
+      <div class="fact"><span class="k">Oznaka prodajnog objekta</span><span class="v">P1</span></div>
+    </div>
+
+    <h2>Objavljeni cjenici</h2>
+    <div class="list">
+      <div class="row head"><span>Datum objave</span><span>Broj pohrane</span><span>Datoteke</span></div>
+      <div class="row">
+        <div class="date">25. 9. 2026., 12:00<small>Važeći cjenik</small></div>
+        <div class="no">1</div>
+        <div class="files">
+          <a class="file" href="kozmeticki-salon_zezelovo-selo-3-51219-cavle_P1_1_2026-09-25_1200.csv" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>CSV</a>
+          <a class="file alt" href="kozmeticki-salon_zezelovo-selo-3-51219-cavle_P1_1_2026-09-25_1200.xml" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>XML</a>
+        </div>
+        <div class="fname">kozmeticki-salon_zezelovo-selo-3-51219-cavle_P1_1_2026-09-25_1200</div>
+      </div>
+    </div>
+
+    <p class="note">Cjenik usluga ažurira se pri svakoj promjeni cijene, najkasnije do 8:00 sati ujutro dana objave izmjene. Svaki objavljeni cjenik ostaje dostupan na ovoj stranici najmanje <strong>30 dana</strong> od dana objave. Datoteke su javno dostupne i mogu ih bez ograničenja dohvaćati programi za praćenje i usporedbu cijena.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Beauty Salon Pink Me Up · GROŽĐICA j.d.o.o.</span>
+    <span>Žeželovo Selo 3, 51219 Čavle · <a href="tel:+385953510325">095 351 0325</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

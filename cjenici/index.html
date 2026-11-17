@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Cjenici usluga · Pink Me Up · Beauty Salon</title>
-<meta name="description" content="Strojno čitljivi cjenici usluga Beauty Salona Pink Me Up (CSV i XML) sa sidrenim cijenama, sukladno Odluci Vlade RH (NN 101/2026)." />
+<meta name="description" content="Strojno čitljivi cjenici usluga Beauty Salona Pink Me Up (CSV) s baznim cijenama, sukladno Pravilniku o načinu objave cjenika proizvoda (NN 132/2026)." />
 <link rel="icon" type="image/png" href="../logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,6 +60,8 @@ h2{font-family:var(--serif);font-weight:500;font-size:2rem;color:var(--wine);mar
 .file.alt{background:#fff;color:var(--magenta);border:1px solid rgba(200,62,115,.35)}
 .file:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(200,62,115,.25)}
 .file svg{width:15px;height:15px}
+.row.archived .date{color:var(--ink-soft)}
+.row.archived .date small{color:var(--rose-gold)}
 .fname{grid-column:1/-1;font-size:.74rem;color:var(--ink-soft);word-break:break-all;margin-top:-6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
 
 .note{margin-top:28px;font-size:.9rem;color:var(--ink-soft);line-height:1.7}
@@ -100,7 +102,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <div class="wrap">
     <span class="eyebrow">Objava cjenika</span>
     <h1>Cjenici usluga</h1>
-    <p class="lead">Sukladno Odluci Vlade RH o objavi cjenika proizvoda i usluga (NN 101/2026) objavljujemo važeći cjenik usluga u strojno čitljivom obliku, u CSV i XML formatu. Uz svaku uslugu navedena je maloprodajna cijena i sidrena cijena, odnosno cijena usluge na dan 10. 9. 2026.</p>
+    <p class="lead">Sukladno Pravilniku o načinu objave cjenika proizvoda (NN 132/2026) objavljujemo važeći cjenik usluga u strojno čitljivom obliku, u CSV formatu. Uz svaku uslugu navedena je maloprodajna cijena i bazna cijena, odnosno cijena usluge na dan 10. 9. 2026.</p>
 
     <div class="facts">
       <div class="fact"><span class="k">Pružatelj usluge</span><span class="v">GROŽĐICA j.d.o.o., OIB 32912339025</span></div>
@@ -113,17 +115,25 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     <div class="list">
       <div class="row head"><span>Datum objave</span><span>Broj pohrane</span><span>Datoteke</span></div>
       <div class="row">
-        <div class="date">25. 9. 2026., 12:00<small>Važeći cjenik</small></div>
+        <div class="date">17. 11. 2026., 9:30<small>Važeći cjenik</small></div>
+        <div class="no">0002</div>
+        <div class="files">
+          <a class="file" href="32912339025_P1_USLUGA_0002_20261117_0930.csv" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>CSV</a>
+        </div>
+        <div class="fname">32912339025_P1_USLUGA_0002_20261117_0930.csv</div>
+      </div>
+      <div class="row archived">
+        <div class="date">25. 9. 2026., 12:00<small>Arhiva, zamijenjen 17. 11. 2026.</small></div>
         <div class="no">1</div>
         <div class="files">
-          <a class="file" href="kozmeticki-salon_zezelovo-selo-3-51219-cavle_P1_1_2026-09-25_1200.csv" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>CSV</a>
+          <a class="file alt" href="kozmeticki-salon_zezelovo-selo-3-51219-cavle_P1_1_2026-09-25_1200.csv" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>CSV</a>
           <a class="file alt" href="kozmeticki-salon_zezelovo-selo-3-51219-cavle_P1_1_2026-09-25_1200.xml" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>XML</a>
         </div>
         <div class="fname">kozmeticki-salon_zezelovo-selo-3-51219-cavle_P1_1_2026-09-25_1200</div>
       </div>
     </div>
 
-    <p class="note">Cjenik usluga ažurira se pri svakoj promjeni cijene, najkasnije do 8:00 sati ujutro dana objave izmjene. Svaki objavljeni cjenik ostaje dostupan na ovoj stranici najmanje <strong>30 dana</strong> od dana objave. Datoteke su javno dostupne i mogu ih bez ograničenja dohvaćati programi za praćenje i usporedbu cijena.</p>
+    <p class="note">Cjenik usluga ažurira se pri svakoj promjeni cijene, najkasnije do 11 sati na dan izmjene. Zamijenjeni cjenik ostaje dostupan u arhivi na ovoj stranici najmanje <strong>15 dana</strong> nakon zamjene. Datoteke su javno dostupne i mogu ih bez ograničenja dohvaćati programi za praćenje i usporedbu cijena.</p>
   </div>
 </main>
 
